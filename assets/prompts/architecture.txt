@@ -1,0 +1,12 @@
+Use case: infographic-diagram.
+Asset type: a wide, readable engineering illustration for a GitHub README, white background, restrained slate blue and amber, sharp large English typography, no logos.
+Primary request: Explain the proposed AgiBot A3 Ultra physical crane-joystick operator architecture. This is a DESIGN PROPOSAL, not implemented hardware.
+Title verbatim: "A3 ULTRA - PHYSICAL JOYSTICK OPERATOR"
+Subtitle verbatim: "Proposed execution architecture | 12-skill plan | Hardware unverified"
+Layout: top-to-bottom or left-to-right closed feedback loop, roomy, only seven main labeled blocks. Connect with clear arrowheads in exactly this order: "Task coordinator" -> "Crane task planner" -> "Joystick policy" -> "A3 arm / hand executor" -> "AimDK + vendor motion control" -> "Physical joystick" -> "Crane / trolley".
+Depict a small neutral humanoid arm holding a black ball-ended industrial joystick on a tall metal pedestal beside the Physical joystick block, and a small bridge crane with trolley beside the final block. The robot manipulates the lever mechanically, not by a digital connection to the crane controller.
+Show a lower feedback return arrow from "Crane / trolley" through "Camera / LiDAR" then "Position / velocity estimator" back to "Joystick policy". Label the sensor block "Placement TBD". Label feedback "Observed motion", not encoder feedback.
+At the top or side show a separate supporting box "Development agent + 12 skills" with dashed guidance to the task and runtime blocks, and a small badge "4 documentation skills drafted". A compact note reads "Specification -> reviewed flowchart -> implementation -> tests".
+Use dashed outlines for all proposed software runtime boxes; use solid outlines for documented AimDK/vendor boundary and physical equipment. Legend exactly: "Dashed: proposed software" and "Solid: documented interface or physical equipment".
+Near joystick label only "Contact steps: 4" and "360-degree mechanical movement". Footer exactly: "Contact map, braking model and sensor placement still require validation."
+Do not include numerical braking commands, force/torque setpoints, a PLC control connection, autonomous safety certification, or an implemented-success claim. Do not show a floating point continuous speed command from the joystick. Keep the explanatory labels readable, the arrows unambiguous, and the diagram compact enough to read on a README.

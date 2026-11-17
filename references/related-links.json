@@ -1,0 +1,20 @@
+[
+  {
+    "label": "A3 / A3 Ultra 공식 로봇 모델 안내",
+    "url": "https://github.com/AgibotTech/A3-A3U-robot-model/blob/589f508ff357447c610a3f3004419035ddc8f153/README_EN.md",
+    "note": "AgibotTech 저장소의 확인한 커밋에 고정한 파일. 여러 하드웨어 변형 중 실제 장비에 맞는 모델을 별도로 확인해야 합니다.",
+    "status": "2026-11-17 HTTP 200 / 로컬 Git 해당 커밋 파일 확인"
+  },
+  {
+    "label": "SONIC for A3 프로젝트와 적용 범위",
+    "url": "https://github.com/AgibotTech/sonic_for_a3/blob/0311d712e3d6febbafd58dcb8b09417e4b2a3bb1/README.md",
+    "note": "강화학습 확장 참고 자료. A3 Ultra 지원 설명과 모델 카드, 한계를 읽는 진입점이며 실제 장비 호환성은 미검증입니다. 검색 캐시와 현재 문서의 모델 표기가 달라 커밋을 고정했습니다.",
+    "status": "2026-11-17 HTTP 200 / 로컬 Git 해당 커밋 파일 확인"
+  },
+  {
+    "label": "SONIC A3 089 학습 / Sim2Sim / Sim2Deploy 가이드",
+    "url": "https://github.com/AgibotTech/sonic_for_a3/blob/0311d712e3d6febbafd58dcb8b09417e4b2a3bb1/docs/a3_training2sim2deploy.md",
+    "note": "파일명과 별개로 확인한 커밋의 문서 제목은 A3 089입니다. 고수준 AimDK 3.3.x 가이드와 적용 조건이 다를 수 있으므로 실제 배포 전 문서, SDK, 모델, 런타임 버전을 대조해야 합니다.",
+    "status": "2026-11-17 HTTP 200 / 로컬 Git 해당 커밋 파일 확인"
+  }
+]

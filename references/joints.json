@@ -1,0 +1,2700 @@
+{
+  "schema_version": 1,
+  "source": {
+    "filename": "model.urdf",
+    "url": "https://github.com/AgibotTech/A3-A3U-robot-model/blob/589f508ff357447c610a3f3004419035ddc8f153/a3_ultra_t3d0/urdf/model.urdf",
+    "sha256": "726bb83e52a55b47c192142f711b2e1353d3d4c3efabfa6267e6b3ce6011f1eb"
+  },
+  "robot": "A3_ULTRA_T3D0",
+  "root_link": "pelvis_link",
+  "counts": {
+    "links": 95,
+    "joints": 94,
+    "joint_types": {
+      "revolute": 63,
+      "fixed": 31
+    },
+    "mimic_count": 12,
+    "non_mimic_revolute_count": 51,
+    "transmissions": 0
+  },
+  "units": {
+    "origin_xyz": "m",
+    "origin_rpy": "rad",
+    "axis": "dimensionless, expressed in joint frame",
+    "revolute_limit_position": "rad",
+    "revolute_limit_velocity": "rad/s",
+    "revolute_limit_effort": "N m",
+    "prismatic_limit_position": "m",
+    "prismatic_limit_velocity": "m/s",
+    "prismatic_limit_effort": "N"
+  },
+  "groups": {
+    "waist": {
+      "joint_types": {
+        "revolute": 3
+      },
+      "mimic_count": 0,
+      "non_mimic_revolute_count": 3
+    },
+    "mounts_and_other": {
+      "joint_types": {
+        "fixed": 15
+      },
+      "mimic_count": 0,
+      "non_mimic_revolute_count": 0
+    },
+    "head": {
+      "joint_types": {
+        "revolute": 2
+      },
+      "mimic_count": 0,
+      "non_mimic_revolute_count": 2
+    },
+    "left_arm": {
+      "joint_types": {
+        "revolute": 7
+      },
+      "mimic_count": 0,
+      "non_mimic_revolute_count": 7
+    },
+    "left_hand": {
+      "joint_types": {
+        "fixed": 7,
+        "revolute": 16
+      },
+      "mimic_count": 6,
+      "non_mimic_revolute_count": 10
+    },
+    "right_arm": {
+      "joint_types": {
+        "revolute": 7
+      },
+      "mimic_count": 0,
+      "non_mimic_revolute_count": 7
+    },
+    "right_hand": {
+      "joint_types": {
+        "fixed": 7,
+        "revolute": 16
+      },
+      "mimic_count": 6,
+      "non_mimic_revolute_count": 10
+    },
+    "left_leg": {
+      "joint_types": {
+        "revolute": 6,
+        "fixed": 1
+      },
+      "mimic_count": 0,
+      "non_mimic_revolute_count": 6
+    },
+    "right_leg": {
+      "joint_types": {
+        "revolute": 6,
+        "fixed": 1
+      },
+      "mimic_count": 0,
+      "non_mimic_revolute_count": 6
+    }
+  },
+  "joints": [
+    {
+      "name": "waist_yaw_joint",
+      "type": "revolute",
+      "group": "waist",
+      "parent": "pelvis_link",
+      "child": "waist_yaw_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -2.6179938779914944,
+        "upper": 2.6179938779914944,
+        "effort": 220.0,
+        "velocity": 12.042771838760874
+      },
+      "mimic": null,
+      "source_line": 85
+    },
+    {
+      "name": "waist_roll_joint",
+      "type": "revolute",
+      "group": "waist",
+      "parent": "waist_yaw_Link",
+      "child": "waist_roll_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.3490658503988659,
+        "upper": 0.3490658503988659,
+        "effort": 46.0,
+        "velocity": 22.7
+      },
+      "mimic": null,
+      "source_line": 114
+    },
+    {
+      "name": "waist_pitch_joint",
+      "type": "revolute",
+      "group": "waist",
+      "parent": "waist_roll_Link",
+      "child": "torso_Link",
+      "origin_xyz_m": [
+        -0.02,
+        0.0,
+        0.005
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.4886921905584123,
+        "upper": 0.4188790204786391,
+        "effort": 118.0,
+        "velocity": 9.24785
+      },
+      "mimic": null,
+      "source_line": 143
+    },
+    {
+      "name": "torso_shell_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "torso_Link",
+      "child": "torso_shell_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 172
+    },
+    {
+      "name": "imu_in_torso_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "torso_Link",
+      "child": "imu_in_torso_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.11185
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 199
+    },
+    {
+      "name": "head_yaw_joint",
+      "type": "revolute",
+      "group": "head",
+      "parent": "torso_Link",
+      "child": "head_yaw_Link",
+      "origin_xyz_m": [
+        0.0303,
+        0.0,
+        0.28896
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -1.0471975511965976,
+        "upper": 1.0471975511965976,
+        "effort": 6.0,
+        "velocity": 12.775810124598491
+      },
+      "mimic": null,
+      "source_line": 226
+    },
+    {
+      "name": "ultra_head_pitch_joint",
+      "type": "revolute",
+      "group": "head",
+      "parent": "head_yaw_Link",
+      "child": "ultra_head_pitch_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.23063
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.4363323129985824,
+        "upper": 0.2617993877991494,
+        "effort": 6.0,
+        "velocity": 12.775810124598491
+      },
+      "mimic": null,
+      "source_line": 255
+    },
+    {
+      "name": "ultra_head_stereo_camera_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "ultra_head_pitch_Link",
+      "child": "ultra_head_stereo_camera_Link",
+      "origin_xyz_m": [
+        0.0919825582208656,
+        0.0,
+        -0.0302207411626506
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.241209429948845,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 284
+    },
+    {
+      "name": "ultra_head_fisheye_camera_left_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "ultra_head_pitch_Link",
+      "child": "ultra_head_fisheye_camera_left_Link",
+      "origin_xyz_m": [
+        0.0150035360841172,
+        0.07489976194252,
+        0.0297028705940667
+      ],
+      "origin_rpy_rad": [
+        -0.0514108672262889,
+        -0.0188992743027947,
+        -0.0437102135661861
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 311
+    },
+    {
+      "name": "ultra_head_fisheye_camera_right_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "ultra_head_pitch_Link",
+      "child": "ultra_head_fisheye_camera_right_Link",
+      "origin_xyz_m": [
+        0.0150035360639564,
+        -0.0748997619425288,
+        0.0297028706040139
+      ],
+      "origin_rpy_rad": [
+        0.0514116929184328,
+        -0.0197300914132888,
+        0.0436674542870696
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 338
+    },
+    {
+      "name": "ultra_head_fisheye_camera_back_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "ultra_head_pitch_Link",
+      "child": "ultra_head_fisheye_camera_back_Link",
+      "origin_xyz_m": [
+        -0.078845195202418,
+        0.0,
+        0.0384247314841796
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        -0.133379281154304,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 365
+    },
+    {
+      "name": "ultra_head_mid360_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "head_yaw_Link",
+      "child": "ultra_head_mid360_Link",
+      "origin_xyz_m": [
+        0.0199258874260123,
+        0.0,
+        0.137544948520896
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 392
+    },
+    {
+      "name": "left_shoulder_pitch_joint",
+      "type": "revolute",
+      "group": "left_arm",
+      "parent": "torso_Link",
+      "child": "left_shoulder_pitch_Link",
+      "origin_xyz_m": [
+        0.0303,
+        0.148224512812617,
+        0.283817906204843
+      ],
+      "origin_rpy_rad": [
+        0.0872664625997163,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -2.8797932657906435,
+        "upper": 2.8797932657906435,
+        "effort": 60.0,
+        "velocity": 13.613568165555769
+      },
+      "mimic": null,
+      "source_line": 419
+    },
+    {
+      "name": "left_shoulder_roll_joint",
+      "type": "revolute",
+      "group": "left_arm",
+      "parent": "left_shoulder_pitch_Link",
+      "child": "left_shoulder_roll_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.059,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        -0.0872664625997163,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.08726646259971647,
+        "upper": 2.6179938779914944,
+        "effort": 60.0,
+        "velocity": 13.613568165555769
+      },
+      "mimic": null,
+      "source_line": 448
+    },
+    {
+      "name": "left_shoulder_yaw_joint",
+      "type": "revolute",
+      "group": "left_arm",
+      "parent": "left_shoulder_roll_Link",
+      "child": "left_shoulder_yaw_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.01,
+        -0.1475
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -2.792526803190927,
+        "upper": 2.792526803190927,
+        "effort": 24.0,
+        "velocity": 15.707963267948966
+      },
+      "mimic": null,
+      "source_line": 477
+    },
+    {
+      "name": "left_elbow_joint",
+      "type": "revolute",
+      "group": "left_arm",
+      "parent": "left_shoulder_yaw_Link",
+      "child": "left_elbow_Link",
+      "origin_xyz_m": [
+        0.01,
+        0.0,
+        -0.1325
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.9599310885968813,
+        "upper": 1.7453292519943295,
+        "effort": 24.0,
+        "velocity": 15.707963267948966
+      },
+      "mimic": null,
+      "source_line": 506
+    },
+    {
+      "name": "left_wrist_roll_joint",
+      "type": "revolute",
+      "group": "left_arm",
+      "parent": "left_elbow_Link",
+      "child": "left_wrist_roll_Link",
+      "origin_xyz_m": [
+        0.129,
+        0.0,
+        -0.01
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -2.792526803190927,
+        "upper": 2.792526803190927,
+        "effort": 24.0,
+        "velocity": 15.707963267948966
+      },
+      "mimic": null,
+      "source_line": 535
+    },
+    {
+      "name": "left_wrist_pitch_joint",
+      "type": "revolute",
+      "group": "left_arm",
+      "parent": "left_wrist_roll_Link",
+      "child": "left_wrist_pitch_Link",
+      "origin_xyz_m": [
+        0.06,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -1.6231562043547265,
+        "upper": 1.6231562043547265,
+        "effort": 6.0,
+        "velocity": 12.775810124598491
+      },
+      "mimic": null,
+      "source_line": 564
+    },
+    {
+      "name": "left_wrist_yaw_joint",
+      "type": "revolute",
+      "group": "left_arm",
+      "parent": "left_wrist_pitch_Link",
+      "child": "left_wrist_yaw_Link",
+      "origin_xyz_m": [
+        0.046,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -1.6231562043547265,
+        "upper": 1.6231562043547265,
+        "effort": 6.0,
+        "velocity": 12.775810124598491
+      },
+      "mimic": null,
+      "source_line": 593
+    },
+    {
+      "name": "left_palm_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "left_wrist_yaw_Link",
+      "child": "left_palm_Link",
+      "origin_xyz_m": [
+        0.048,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 612
+    },
+    {
+      "name": "L_palm_joint",
+      "type": "fixed",
+      "group": "left_hand",
+      "parent": "left_palm_Link",
+      "child": "L_palm",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 646
+    },
+    {
+      "name": "L_thumb_roll_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_palm",
+      "child": "L_thumb_roll_link",
+      "origin_xyz_m": [
+        0.046851,
+        0.0,
+        0.018529
+      ],
+      "origin_rpy_rad": [
+        -1.57079632679,
+        0.0,
+        -1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 0.784,
+        "lower": -1.1213740444063567,
+        "upper": 0.029670597283903602,
+        "velocity": 8.729
+      },
+      "mimic": null,
+      "source_line": 654
+    },
+    {
+      "name": "L_thumb_abad_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_thumb_roll_link",
+      "child": "L_thumb_abad_link",
+      "origin_xyz_m": [
+        0.020033,
+        -0.004292,
+        0.00075
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "effort": 0.588,
+        "lower": -0.04537856055185257,
+        "upper": 1.642354826126664,
+        "velocity": 11.636
+      },
+      "mimic": null,
+      "source_line": 676
+    },
+    {
+      "name": "L_thumb_mcp_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_thumb_abad_link",
+      "child": "L_thumb_mcp_link",
+      "origin_xyz_m": [
+        0.0,
+        -0.0265,
+        -0.0058001
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": -0.8415977653116657,
+        "upper": 0.0,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 698
+    },
+    {
+      "name": "L_thumb_pip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_thumb_mcp_link",
+      "child": "L_thumb_pip_link",
+      "origin_xyz_m": [
+        0.0,
+        -0.036229,
+        0.0026606
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": -1.1344640137963142,
+        "upper": 0.0,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "L_thumb_mcp_joint",
+        "multiplier": 1.33,
+        "offset": 0.0
+      },
+      "source_line": 726
+    },
+    {
+      "name": "L_thumb_dip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_thumb_pip_link",
+      "child": "L_thumb_dip_link",
+      "origin_xyz_m": [
+        0.0,
+        -0.026054,
+        -0.008672
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": -1.1344640137963142,
+        "upper": 0.0,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "L_thumb_mcp_joint",
+        "multiplier": 1.3,
+        "offset": 0.0
+      },
+      "source_line": 755
+    },
+    {
+      "name": "L_thumb_tip_joint",
+      "type": "fixed",
+      "group": "left_hand",
+      "parent": "L_thumb_dip_link",
+      "child": "L_thumb_tip",
+      "origin_xyz_m": [
+        0.0,
+        -0.02311,
+        -0.01374
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 783
+    },
+    {
+      "name": "L_index_abad_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_palm",
+      "child": "L_index_abad_link",
+      "origin_xyz_m": [
+        0.094423,
+        0.00069782,
+        0.026958
+      ],
+      "origin_rpy_rad": [
+        -1.57079632679,
+        0.0,
+        -1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.863,
+        "lower": 0.0,
+        "upper": 0.16406094968746698,
+        "velocity": 2.204
+      },
+      "mimic": null,
+      "source_line": 798
+    },
+    {
+      "name": "L_index_pip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_index_abad_link",
+      "child": "L_index_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 820
+    },
+    {
+      "name": "L_index_dip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_index_pip_link",
+      "child": "L_index_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "L_index_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 847
+    },
+    {
+      "name": "L_index_tip_joint",
+      "type": "fixed",
+      "group": "left_hand",
+      "parent": "L_index_dip_link",
+      "child": "L_index_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 875
+    },
+    {
+      "name": "L_middle_abad_joint",
+      "type": "fixed",
+      "group": "left_hand",
+      "parent": "L_palm",
+      "child": "L_middle_abad_link",
+      "origin_xyz_m": [
+        0.096423,
+        0.0031978,
+        0.0079501
+      ],
+      "origin_rpy_rad": [
+        -1.57079632679,
+        0.0,
+        -1.57079632679
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 890
+    },
+    {
+      "name": "L_middle_pip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_middle_abad_link",
+      "child": "L_middle_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 910
+    },
+    {
+      "name": "L_middle_dip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_middle_pip_link",
+      "child": "L_middle_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "L_middle_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 937
+    },
+    {
+      "name": "L_middle_tip_joint",
+      "type": "fixed",
+      "group": "left_hand",
+      "parent": "L_middle_dip_link",
+      "child": "L_middle_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 965
+    },
+    {
+      "name": "L_ring_abad_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_palm",
+      "child": "L_ring_abad_link",
+      "origin_xyz_m": [
+        0.094423,
+        0.0021978,
+        -0.01105
+      ],
+      "origin_rpy_rad": [
+        -1.57079632679,
+        0.0,
+        -1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 2.766,
+        "lower": -0.16929693744344995,
+        "upper": 0.0,
+        "velocity": 1.484
+      },
+      "mimic": null,
+      "source_line": 981
+    },
+    {
+      "name": "L_ring_pip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_ring_abad_link",
+      "child": "L_ring_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 1003
+    },
+    {
+      "name": "L_ring_dip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_ring_pip_link",
+      "child": "L_ring_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "L_ring_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 1030
+    },
+    {
+      "name": "L_ring_tip_joint",
+      "type": "fixed",
+      "group": "left_hand",
+      "parent": "L_ring_dip_link",
+      "child": "L_ring_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1058
+    },
+    {
+      "name": "L_pinky_abad_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_palm",
+      "child": "L_pinky_abad_link",
+      "origin_xyz_m": [
+        0.089423,
+        0.00069782,
+        -0.03005
+      ],
+      "origin_rpy_rad": [
+        -1.57079632679,
+        0.0,
+        -1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 3.393,
+        "lower": -0.1850049007113989,
+        "upper": 0.0,
+        "velocity": 1.21
+      },
+      "mimic": null,
+      "source_line": 1072
+    },
+    {
+      "name": "L_pinky_pip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_pinky_abad_link",
+      "child": "L_pinky_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 1095
+    },
+    {
+      "name": "L_pinky_dip_joint",
+      "type": "revolute",
+      "group": "left_hand",
+      "parent": "L_pinky_pip_link",
+      "child": "L_pinky_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "L_pinky_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 1122
+    },
+    {
+      "name": "L_pinky_tip_joint",
+      "type": "fixed",
+      "group": "left_hand",
+      "parent": "L_pinky_dip_link",
+      "child": "L_pinky_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1150
+    },
+    {
+      "name": "left_hand_camera_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "left_wrist_yaw_Link",
+      "child": "left_hand_camera_Link",
+      "origin_xyz_m": [
+        0.04,
+        -0.007,
+        0.095
+      ],
+      "origin_rpy_rad": [
+        0.0826329174364269,
+        0.315079635536688,
+        -0.613940279021508
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1189
+    },
+    {
+      "name": "right_shoulder_pitch_joint",
+      "type": "revolute",
+      "group": "right_arm",
+      "parent": "torso_Link",
+      "child": "right_shoulder_pitch_Link",
+      "origin_xyz_m": [
+        0.0303,
+        -0.148224512812557,
+        0.283817906204843
+      ],
+      "origin_rpy_rad": [
+        -0.0872664625997163,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -2.8797932657906404,
+        "upper": 2.8797932657906435,
+        "effort": 60.0,
+        "velocity": 13.613568165555769
+      },
+      "mimic": null,
+      "source_line": 1220
+    },
+    {
+      "name": "right_shoulder_roll_joint",
+      "type": "revolute",
+      "group": "right_arm",
+      "parent": "right_shoulder_pitch_Link",
+      "child": "right_shoulder_roll_Link",
+      "origin_xyz_m": [
+        0.0,
+        -0.059,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0872664625997163,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -2.6179938779914944,
+        "upper": 0.08726646259971647,
+        "effort": 60.0,
+        "velocity": 13.613568165555769
+      },
+      "mimic": null,
+      "source_line": 1249
+    },
+    {
+      "name": "right_shoulder_yaw_joint",
+      "type": "revolute",
+      "group": "right_arm",
+      "parent": "right_shoulder_roll_Link",
+      "child": "right_shoulder_yaw_Link",
+      "origin_xyz_m": [
+        0.0,
+        -0.01,
+        -0.1475
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -2.792526803190927,
+        "upper": 2.792526803190927,
+        "effort": 24.0,
+        "velocity": 15.707963267948966
+      },
+      "mimic": null,
+      "source_line": 1278
+    },
+    {
+      "name": "right_elbow_joint",
+      "type": "revolute",
+      "group": "right_arm",
+      "parent": "right_shoulder_yaw_Link",
+      "child": "right_elbow_Link",
+      "origin_xyz_m": [
+        0.01,
+        0.0,
+        -0.1325
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.9599310885968813,
+        "upper": 1.7453292519943295,
+        "effort": 24.0,
+        "velocity": 15.707963267948966
+      },
+      "mimic": null,
+      "source_line": 1307
+    },
+    {
+      "name": "right_wrist_roll_joint",
+      "type": "revolute",
+      "group": "right_arm",
+      "parent": "right_elbow_Link",
+      "child": "right_wrist_roll_Link",
+      "origin_xyz_m": [
+        0.129,
+        0.0,
+        -0.01
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -2.792526803190927,
+        "upper": 2.792526803190927,
+        "effort": 24.0,
+        "velocity": 15.707963267948966
+      },
+      "mimic": null,
+      "source_line": 1336
+    },
+    {
+      "name": "right_wrist_pitch_joint",
+      "type": "revolute",
+      "group": "right_arm",
+      "parent": "right_wrist_roll_Link",
+      "child": "right_wrist_pitch_Link",
+      "origin_xyz_m": [
+        0.06,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -1.6231562043547265,
+        "upper": 1.6231562043547265,
+        "effort": 6.0,
+        "velocity": 12.775810124598491
+      },
+      "mimic": null,
+      "source_line": 1365
+    },
+    {
+      "name": "right_wrist_yaw_joint",
+      "type": "revolute",
+      "group": "right_arm",
+      "parent": "right_wrist_pitch_Link",
+      "child": "right_wrist_yaw_Link",
+      "origin_xyz_m": [
+        0.046,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -1.6231562043547265,
+        "upper": 1.6231562043547265,
+        "effort": 6.0,
+        "velocity": 12.775810124598491
+      },
+      "mimic": null,
+      "source_line": 1394
+    },
+    {
+      "name": "right_palm_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "right_wrist_yaw_Link",
+      "child": "right_palm_Link",
+      "origin_xyz_m": [
+        0.048,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1411
+    },
+    {
+      "name": "R_palm_joint",
+      "type": "fixed",
+      "group": "right_hand",
+      "parent": "right_palm_Link",
+      "child": "R_palm",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1444
+    },
+    {
+      "name": "R_thumb_roll_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_palm",
+      "child": "R_thumb_roll_link",
+      "origin_xyz_m": [
+        0.046851,
+        0.0,
+        0.018529
+      ],
+      "origin_rpy_rad": [
+        1.57079632679,
+        0.0,
+        1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 0.784,
+        "lower": -0.029670597283903602,
+        "upper": 1.1213740444063567,
+        "velocity": 8.729
+      },
+      "mimic": null,
+      "source_line": 1451
+    },
+    {
+      "name": "R_thumb_abad_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_thumb_roll_link",
+      "child": "R_thumb_abad_link",
+      "origin_xyz_m": [
+        0.020033,
+        0.004292,
+        0.00075
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "effort": 0.588,
+        "lower": -1.642354826126664,
+        "upper": 0.04537856055185257,
+        "velocity": 11.636
+      },
+      "mimic": null,
+      "source_line": 1473
+    },
+    {
+      "name": "R_thumb_mcp_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_thumb_abad_link",
+      "child": "R_thumb_mcp_link",
+      "origin_xyz_m": [
+        0.0,
+        0.0265,
+        -0.0058001
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 0.8415977653116657,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 1494
+    },
+    {
+      "name": "R_thumb_pip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_thumb_mcp_link",
+      "child": "R_thumb_pip_link",
+      "origin_xyz_m": [
+        0.0,
+        0.036229,
+        0.0026606
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.1344640137963142,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "R_thumb_mcp_joint",
+        "multiplier": 1.33,
+        "offset": 0.0
+      },
+      "source_line": 1521
+    },
+    {
+      "name": "R_thumb_dip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_thumb_pip_link",
+      "child": "R_thumb_dip_link",
+      "origin_xyz_m": [
+        0.0,
+        0.026054,
+        -0.008672
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.1344640137963142,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "R_thumb_mcp_joint",
+        "multiplier": 1.3,
+        "offset": 0.0
+      },
+      "source_line": 1549
+    },
+    {
+      "name": "R_thumb_tip_joint",
+      "type": "fixed",
+      "group": "right_hand",
+      "parent": "R_thumb_dip_link",
+      "child": "R_thumb_tip",
+      "origin_xyz_m": [
+        0.0,
+        0.02311,
+        -0.01374
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1577
+    },
+    {
+      "name": "R_index_abad_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_palm",
+      "child": "R_index_abad_link",
+      "origin_xyz_m": [
+        0.094423,
+        -0.00069782,
+        0.026958
+      ],
+      "origin_rpy_rad": [
+        1.57079632679,
+        0.0,
+        1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.863,
+        "lower": -0.16406094968746698,
+        "upper": 0.0,
+        "velocity": 2.204
+      },
+      "mimic": null,
+      "source_line": 1592
+    },
+    {
+      "name": "R_index_pip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_index_abad_link",
+      "child": "R_index_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 1615
+    },
+    {
+      "name": "R_index_dip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_index_pip_link",
+      "child": "R_index_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "R_index_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 1642
+    },
+    {
+      "name": "R_index_tip_joint",
+      "type": "fixed",
+      "group": "right_hand",
+      "parent": "R_index_dip_link",
+      "child": "R_index_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1670
+    },
+    {
+      "name": "R_middle_abad_joint",
+      "type": "fixed",
+      "group": "right_hand",
+      "parent": "R_palm",
+      "child": "R_middle_abad_link",
+      "origin_xyz_m": [
+        0.096423,
+        -0.0031978,
+        0.0079501
+      ],
+      "origin_rpy_rad": [
+        1.57079632679,
+        0.0,
+        1.57079632679
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1684
+    },
+    {
+      "name": "R_middle_pip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_middle_abad_link",
+      "child": "R_middle_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 1705
+    },
+    {
+      "name": "R_middle_dip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_middle_pip_link",
+      "child": "R_middle_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "R_middle_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 1732
+    },
+    {
+      "name": "R_middle_tip_joint",
+      "type": "fixed",
+      "group": "right_hand",
+      "parent": "R_middle_dip_link",
+      "child": "R_middle_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1760
+    },
+    {
+      "name": "R_ring_abad_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_palm",
+      "child": "R_ring_abad_link",
+      "origin_xyz_m": [
+        0.094423,
+        -0.0021978,
+        -0.01105
+      ],
+      "origin_rpy_rad": [
+        1.57079632679,
+        0.0,
+        1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 2.766,
+        "lower": 0.0,
+        "upper": 0.16929693744344995,
+        "velocity": 1.484
+      },
+      "mimic": null,
+      "source_line": 1774
+    },
+    {
+      "name": "R_ring_pip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_ring_abad_link",
+      "child": "R_ring_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 1797
+    },
+    {
+      "name": "R_ring_dip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_ring_pip_link",
+      "child": "R_ring_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "R_ring_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 1824
+    },
+    {
+      "name": "R_ring_tip_joint",
+      "type": "fixed",
+      "group": "right_hand",
+      "parent": "R_ring_dip_link",
+      "child": "R_ring_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1852
+    },
+    {
+      "name": "R_pinky_abad_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_palm",
+      "child": "R_pinky_abad_link",
+      "origin_xyz_m": [
+        0.089423,
+        -0.00069782,
+        -0.03005
+      ],
+      "origin_rpy_rad": [
+        1.57079632679,
+        0.0,
+        1.57079632679
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 3.393,
+        "lower": 0.0,
+        "upper": 0.1850049007113989,
+        "velocity": 1.21
+      },
+      "mimic": null,
+      "source_line": 1866
+    },
+    {
+      "name": "R_pinky_pip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_pinky_abad_link",
+      "child": "R_pinky_pip_link",
+      "origin_xyz_m": [
+        0.001025,
+        0.0,
+        0.017575
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.4835298641951802,
+        "velocity": 3.879
+      },
+      "mimic": null,
+      "source_line": 1889
+    },
+    {
+      "name": "R_pinky_dip_joint",
+      "type": "revolute",
+      "group": "right_hand",
+      "parent": "R_pinky_pip_link",
+      "child": "R_pinky_dip_link",
+      "origin_xyz_m": [
+        -0.0014266,
+        0.0,
+        0.036
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "effort": 1.764,
+        "lower": 0.0,
+        "upper": 1.7540558982543013,
+        "velocity": 3.879
+      },
+      "mimic": {
+        "joint": "R_pinky_pip_joint",
+        "multiplier": 1.097,
+        "offset": 0.0
+      },
+      "source_line": 1916
+    },
+    {
+      "name": "R_pinky_tip_joint",
+      "type": "fixed",
+      "group": "right_hand",
+      "parent": "R_pinky_dip_link",
+      "child": "R_pinky_tip",
+      "origin_xyz_m": [
+        -0.00131,
+        0.0,
+        0.03841
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1944
+    },
+    {
+      "name": "right_hand_camera_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "right_wrist_yaw_Link",
+      "child": "right_hand_camera_Link",
+      "origin_xyz_m": [
+        0.04,
+        0.007,
+        0.095
+      ],
+      "origin_rpy_rad": [
+        -0.0826329174066548,
+        0.31507963551711,
+        0.613940279030736
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 1987
+    },
+    {
+      "name": "D457_in_torso_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "torso_Link",
+      "child": "D457_in_torso_Link",
+      "origin_xyz_m": [
+        0.148942365217947,
+        4.25892808163051e-05,
+        0.215260754924945
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.698131739779724,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 2017
+    },
+    {
+      "name": "D415_in_torso_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "torso_Link",
+      "child": "D415_in_torso_Link",
+      "origin_xyz_m": [
+        0.124480946106383,
+        0.0,
+        -0.0322504622882431
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        1.13446401379144,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 2044
+    },
+    {
+      "name": "senyun_in_torso_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "torso_Link",
+      "child": "senyun_in_torso_Link",
+      "origin_xyz_m": [
+        0.0302999999991496,
+        -0.137203916977493,
+        0.187745894474438
+      ],
+      "origin_rpy_rad": [
+        0.226892802759255,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 2071
+    },
+    {
+      "name": "imu_in_pelvis_joint",
+      "type": "fixed",
+      "group": "mounts_and_other",
+      "parent": "pelvis_link",
+      "child": "imu_in_pelvis_Link",
+      "origin_xyz_m": [
+        0.00437000000055574,
+        0.0,
+        -0.211649999998792
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 2098
+    },
+    {
+      "name": "left_hip_pitch_joint",
+      "type": "revolute",
+      "group": "left_leg",
+      "parent": "pelvis_link",
+      "child": "left_hip_pitch_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.122982962907307,
+        -0.178753185592275
+      ],
+      "origin_rpy_rad": [
+        -0.261799387796752,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -2.5132741228718345,
+        "upper": 2.9321531433504737,
+        "effort": 220.0,
+        "velocity": 12.042771838760874
+      },
+      "mimic": null,
+      "source_line": 2125
+    },
+    {
+      "name": "left_hip_roll_joint",
+      "type": "revolute",
+      "group": "left_leg",
+      "parent": "left_hip_pitch_Link",
+      "child": "left_hip_roll_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0113162873210235,
+        -0.0422329592212282
+      ],
+      "origin_rpy_rad": [
+        0.261799387796752,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.5235987755982988,
+        "upper": 1.4835298641951802,
+        "effort": 220.0,
+        "velocity": 12.042771838760874
+      },
+      "mimic": null,
+      "source_line": 2154
+    },
+    {
+      "name": "left_hip_yaw_joint",
+      "type": "revolute",
+      "group": "left_leg",
+      "parent": "left_hip_roll_Link",
+      "child": "left_hip_yaw_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -2.722713633111154,
+        "upper": 2.722713633111154,
+        "effort": 220.0,
+        "velocity": 12.042771838760874
+      },
+      "mimic": null,
+      "source_line": 2183
+    },
+    {
+      "name": "left_knee_joint",
+      "type": "revolute",
+      "group": "left_leg",
+      "parent": "left_hip_yaw_Link",
+      "child": "left_knee_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        -0.369999999999994
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.12217304763960307,
+        "upper": 2.530727415391778,
+        "effort": 320.0,
+        "velocity": 14.660765716752367
+      },
+      "mimic": null,
+      "source_line": 2212
+    },
+    {
+      "name": "left_knee_shell_joint",
+      "type": "fixed",
+      "group": "left_leg",
+      "parent": "left_knee_Link",
+      "child": "left_knee_shell_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 2241
+    },
+    {
+      "name": "left_ankle_pitch_joint",
+      "type": "revolute",
+      "group": "left_leg",
+      "parent": "left_knee_Link",
+      "child": "left_ankle_pitch_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        -0.415
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.9075712110370514,
+        "upper": 0.5235987755982988,
+        "effort": 118.2,
+        "velocity": 10.8
+      },
+      "mimic": null,
+      "source_line": 2268
+    },
+    {
+      "name": "left_ankle_roll_joint",
+      "type": "revolute",
+      "group": "left_leg",
+      "parent": "left_ankle_pitch_Link",
+      "child": "left_ankle_roll_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.3490658503988659,
+        "upper": 0.3490658503988659,
+        "effort": 54.75,
+        "velocity": 19.37
+      },
+      "mimic": null,
+      "source_line": 2297
+    },
+    {
+      "name": "right_hip_pitch_joint",
+      "type": "revolute",
+      "group": "right_leg",
+      "parent": "pelvis_link",
+      "child": "right_hip_pitch_Link",
+      "origin_xyz_m": [
+        0.0,
+        -0.122982962906483,
+        -0.178753185592622
+      ],
+      "origin_rpy_rad": [
+        0.261799387800366,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -2.5132741228718345,
+        "upper": 2.9321531433504737,
+        "effort": 220.0,
+        "velocity": 12.042771838760874
+      },
+      "mimic": null,
+      "source_line": 2326
+    },
+    {
+      "name": "right_hip_roll_joint",
+      "type": "revolute",
+      "group": "right_leg",
+      "parent": "right_hip_pitch_Link",
+      "child": "right_hip_roll_Link",
+      "origin_xyz_m": [
+        -0.00109999056710738,
+        -0.0113162873211849,
+        -0.042232959221232
+      ],
+      "origin_rpy_rad": [
+        -0.261799387800366,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -1.4835298641951802,
+        "upper": 0.5235987755982988,
+        "effort": 220.0,
+        "velocity": 12.042771838760874
+      },
+      "mimic": null,
+      "source_line": 2355
+    },
+    {
+      "name": "right_hip_yaw_joint",
+      "type": "revolute",
+      "group": "right_leg",
+      "parent": "right_hip_roll_Link",
+      "child": "right_hip_yaw_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limit": {
+        "lower": -2.722713633111154,
+        "upper": 2.722713633111154,
+        "effort": 220.0,
+        "velocity": 12.042771838760874
+      },
+      "mimic": null,
+      "source_line": 2384
+    },
+    {
+      "name": "right_knee_joint",
+      "type": "revolute",
+      "group": "right_leg",
+      "parent": "right_hip_yaw_Link",
+      "child": "right_knee_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        -0.369999999999993
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.12217304763960307,
+        "upper": 2.530727415391778,
+        "effort": 320.0,
+        "velocity": 14.660765716752367
+      },
+      "mimic": null,
+      "source_line": 2413
+    },
+    {
+      "name": "right_knee_shell_joint",
+      "type": "fixed",
+      "group": "right_leg",
+      "parent": "right_knee_Link",
+      "child": "right_knee_shell_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": null,
+      "limit": null,
+      "mimic": null,
+      "source_line": 2442
+    },
+    {
+      "name": "right_ankle_pitch_joint",
+      "type": "revolute",
+      "group": "right_leg",
+      "parent": "right_knee_Link",
+      "child": "right_ankle_pitch_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        -0.415
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.9075712110370514,
+        "upper": 0.5235987755982988,
+        "effort": 118.2,
+        "velocity": 10.8
+      },
+      "mimic": null,
+      "source_line": 2469
+    },
+    {
+      "name": "right_ankle_roll_joint",
+      "type": "revolute",
+      "group": "right_leg",
+      "parent": "right_ankle_pitch_Link",
+      "child": "right_ankle_roll_Link",
+      "origin_xyz_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_rpy_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_in_joint_frame": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "limit": {
+        "lower": -0.3490658503988659,
+        "upper": 0.3490658503988659,
+        "effort": 54.75,
+        "velocity": 19.37
+      },
+      "mimic": null,
+      "source_line": 2498
+    }
+  ],
+  "hardware_verified": false,
+  "notes": [
+    "Counts describe this URDF, not verified motors, runtime command dimensions or hardware limits.",
+    "A3 semantic groups use joint-name prefixes; unrelated model names fall into mounts_and_other.",
+    "Missing URDF origins and axes use URDF defaults. Fixed joints have no motion axis.",
+    "Mimic relations are preserved as q_child = multiplier * q_target + offset.",
+    "The non-mimic count covers revolute variables only; floating and planar joints are not counted as one degree of freedom."
+  ]
+}

@@ -1,0 +1,16 @@
+Use case: scientific-educational.
+Asset type: annotated robot joint overview for a GitHub README.
+Input image 1 is a visual reference for the A3 Ultra robot's body proportions and appearance, not evidence of exact anatomy or calibration. Transform it into a new clean white-background educational plate with a centered full-body neutral robot illustration, clear symmetrical limbs, and a few color-coded callout lines. Preserve the overall neutral white/gray robot design without adding branding.
+Title verbatim: "A3 ULTRA T3D0 - JOINT MODEL OVERVIEW"
+Subtitle verbatim: "URDF snapshot | Model variables, not a verified motor inventory"
+Use five group callouts with exact text, all clearly associated with their anatomical region:
+"Head: 2"
+"Arms: 7 per side"
+"Waist: 3"
+"Legs: 6 per side"
+"Hands: 16 revolute joints per hand"
+For hands, add a separate small inset showing a schematic five-finger hand and exact text: "6 mimic joints per hand" and "10 independent variables per hand". Mimic means model coupling; do not depict six fingers or six physical motors.
+Include a large bottom equation exactly: "31 body + 32 hand = 63 revolute joints"
+Below it another exact line: "63 revolute - 12 mimic = 51 independent variables"
+A small footnote exactly: "31 fixed joints are not shown. Actual actuator mapping requires hardware verification."
+Color palette: slate and white robot, teal body joint markers, amber hand coupling markers. Count labels refer to the verified T3D0 URDF; do not draw 51 individual numbered dots. Avoid an exploded mechanical assembly or invented gears. No anatomical human skeleton, no extra limbs, no controller code. Make the callouts large enough to be read in a README. Keep clear distinction between 63 modeled revolute joints and 51 independent model variables.

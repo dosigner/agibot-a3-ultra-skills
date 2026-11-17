@@ -1,0 +1,18 @@
+Use case: infographic-diagram.
+Asset type: a clean wide technical board-and-communications diagram for an A3 Ultra GitHub README. White backdrop, slate blue cards, teal communication arrows, restrained amber notes, large exact English typography. No brand logos, no decorative circuit traces.
+Title verbatim: "A3 ULTRA - DOCUMENTED SOFTWARE INTERFACES"
+Subtitle verbatim: "AimDK v3.3.x reference | Installed configuration not yet verified"
+Layout: on the left a box "Development application" and a smaller caption "Host PC or approved compute target". In the center TWO clearly separate rails: upper "ROS 2 Jazzy / Fast DDS" with smaller "Topic publish / subscribe", lower "HTTP JSON RPC" with smaller "Request / response". These connect the application to three distinct board boxes on the right.
+Board 1: "HDU - RK3588S2" with functions "Interaction / audio" and "Head cameras / IMU".
+Board 2: "MDU - RK3588" with functions "motion_control / motion_player" and "System / diagnostics".
+Board 3: "ADU - NVIDIA Thor" with functions "Depth cameras / LiDAR" and "SLAM / maps / navigation".
+Around the board group draw a clear overall boundary labeled "Onboard modules: mostly AimRT Channel / RPC". Do not represent every vendor module as a native ROS node.
+Below the interface rails include three readable example labels exactly:
+"/motion/control/arm_joint_command"
+"/motion/control/arm_joint_state"
+"/motion/control/pnc/arm_joint_command"
+Keep these near the MDU motion-control lane. Do not label these as crane-controller topics.
+Below the ADU board a small note: "Jetson Linux vs DRIVE OS: verify on device".
+A separate bottom annotation exactly: "High-rate arm streaming belongs in a runtime process, not an LLM tool-call loop."
+A second footer exactly: "Board roles are from the guide. Actual topics, QoS and versions require device checks."
+Do not include internal IP addresses, invented live telemetry, motor torque APIs, deployment permission on MDU, or a verified hardware badge. Show communications conceptually, not a physical pinout. Keep each board label and arrow clear.

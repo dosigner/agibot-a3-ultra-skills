@@ -1,0 +1,4006 @@
+{
+  "schema_version": 1,
+  "product": "A3 Ultra",
+  "doc_version": "v3_3",
+  "checked_at": "2026-11-17T14:06:55+09:00",
+  "source_base": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/",
+  "runtime_verified": false,
+  "pages": [
+    {
+      "slug": "index",
+      "title": "V3.3 Documentation and Interface Change Notes",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/",
+      "headings": [
+        {
+          "level": 2,
+          "id": "v33-documentation-updates",
+          "title": "V3.3 Documentation Updates",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/#v33-documentation-updates"
+        },
+        {
+          "level": 2,
+          "id": "v33-interface-change-notes",
+          "title": "V3.3 Interface Change Notes",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/#v33-interface-change-notes"
+        },
+        {
+          "level": 2,
+          "id": "issue-feedback-channel",
+          "title": "Issue Feedback Channel",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/#issue-feedback-channel"
+        }
+      ],
+      "links": [
+        {
+          "label": "V3.3 Documentation Updates",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/#v33-documentation-updates"
+        },
+        {
+          "label": "V3.3 Interface Change Notes",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/#v33-interface-change-notes"
+        },
+        {
+          "label": "Issue Feedback Channel",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/#issue-feedback-channel"
+        },
+        {
+          "label": "https://agirobot.feishu.cn/share/base/form/shrcnLP2tv9gzyrZ2tSDlm1Baif",
+          "url": "https://agirobot.feishu.cn/share/base/form/shrcnLP2tv9gzyrZ2tSDlm1Baif"
+        }
+      ]
+    },
+    {
+      "slug": "01-a3_overview",
+      "title": "1. Expedition A3 Ultra Overview",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview",
+      "headings": [
+        {
+          "level": 1,
+          "id": "1-expedition-a3-ultra-overview",
+          "title": "1. Expedition A3 Ultra Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#1-expedition-a3-ultra-overview"
+        },
+        {
+          "level": 2,
+          "id": "11-component-description",
+          "title": "1.1 Component Description",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#11-component-description"
+        },
+        {
+          "level": 2,
+          "id": "12-robot-specifications",
+          "title": "1.2 Robot Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#12-robot-specifications"
+        },
+        {
+          "level": 2,
+          "id": "13-robot-joint-motion-range",
+          "title": "1.3 Robot Joint Motion Range",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#13-robot-joint-motion-range"
+        },
+        {
+          "level": 2,
+          "id": "14-robot-camera-field-of-view",
+          "title": "1.4 Robot Camera Field of View",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#14-robot-camera-field-of-view"
+        },
+        {
+          "level": 2,
+          "id": "15-network-topology",
+          "title": "1.5 Network Topology",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#15-network-topology"
+        },
+        {
+          "level": 2,
+          "id": "16-industrial-pc-specifications",
+          "title": "1.6 Industrial PC Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#16-industrial-pc-specifications"
+        }
+      ],
+      "links": [
+        {
+          "label": "1.1 Component Description",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#11-component-description"
+        },
+        {
+          "label": "1.2 Robot Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#12-robot-specifications"
+        },
+        {
+          "label": "1.3 Robot Joint Motion Range",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#13-robot-joint-motion-range"
+        },
+        {
+          "label": "1.4 Robot Camera Field of View",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#14-robot-camera-field-of-view"
+        },
+        {
+          "label": "1.5 Network Topology",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#15-network-topology"
+        },
+        {
+          "label": "1.6 Industrial PC Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/01-a3_overview#16-industrial-pc-specifications"
+        },
+        {
+          "label": "Rockchip official website",
+          "url": "https://www.rock-chips.com/a/cn/product/RK35xilie/2022/0926/1656.html"
+        },
+        {
+          "label": "NVIDIA official page",
+          "url": "https://developer.nvidia.com/drive/agx?utm_source=chatgpt.com"
+        }
+      ]
+    },
+    {
+      "slug": "02-software_overview",
+      "title": "2. Software System Overview",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview",
+      "headings": [
+        {
+          "level": 1,
+          "id": "2-software-system-overview",
+          "title": "2. Software System Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#2-software-system-overview"
+        },
+        {
+          "level": 2,
+          "id": "21-basic-startup-mode",
+          "title": "2.1 Basic Startup Mode",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#21-basic-startup-mode"
+        },
+        {
+          "level": 2,
+          "id": "22-module-function-overview",
+          "title": "2.2 Module Function Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#22-module-function-overview"
+        },
+        {
+          "level": 3,
+          "id": "221-system-modes",
+          "title": "2.2.1 System Modes",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#221-system-modes"
+        },
+        {
+          "level": 3,
+          "id": "222-module-disabling-method-caution",
+          "title": "2.2.2 Module Disabling Method (Caution)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#222-module-disabling-method-caution"
+        }
+      ],
+      "links": [
+        {
+          "label": "2.1 Basic Startup Mode",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#21-basic-startup-mode"
+        },
+        {
+          "label": "2.2 Module Function Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#22-module-function-overview"
+        },
+        {
+          "label": "2.2.1 System Modes",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#221-system-modes"
+        },
+        {
+          "label": "2.2.2 Module Disabling Method (Caution)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/02-software_overview#222-module-disabling-method-caution"
+        }
+      ]
+    },
+    {
+      "slug": "03-second_develop_interface_overview",
+      "title": "3. Secondary Development Interface Overview",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview",
+      "headings": [
+        {
+          "level": 1,
+          "id": "3-secondary-development-interface-overview",
+          "title": "3. Secondary Development Interface Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#3-secondary-development-interface-overview"
+        },
+        {
+          "level": 2,
+          "id": "31-http-json-rpc",
+          "title": "3.1 HTTP JSON RPC",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#31-http-json-rpc"
+        },
+        {
+          "level": 2,
+          "id": "32-ros2-topic",
+          "title": "3.2 ROS2 Topic",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#32-ros2-topic"
+        },
+        {
+          "level": 3,
+          "id": "321-environment-variable-setup",
+          "title": "3.2.1 Environment Variable Setup",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#321-environment-variable-setup"
+        },
+        {
+          "level": 3,
+          "id": "322-qos-settings",
+          "title": "3.2.2 QoS Settings",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#322-qos-settings"
+        },
+        {
+          "level": 3,
+          "id": "323-example-usage",
+          "title": "3.2.3 Example Usage",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#323-example-usage"
+        }
+      ],
+      "links": [
+        {
+          "label": "AimRT official documentation",
+          "url": "https://docs.aimrt.org/v0.10.0/tutorials/concepts/concepts.html#aimrt-channel"
+        },
+        {
+          "label": "3.1 HTTP JSON RPC",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#31-http-json-rpc"
+        },
+        {
+          "label": "3.2 ROS2 Topic",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#32-ros2-topic"
+        },
+        {
+          "label": "3.2.1 Environment Variable Setup",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#321-environment-variable-setup"
+        },
+        {
+          "label": "3.2.2 QoS Settings",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#322-qos-settings"
+        },
+        {
+          "label": "3.2.3 Example Usage",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/03-second_develop_interface_overview#323-example-usage"
+        }
+      ]
+    },
+    {
+      "slug": "04-second_develop_constraints_overview",
+      "title": "4. Basic Constraints for Secondary Development",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/04-second_develop_constraints_overview",
+      "headings": [
+        {
+          "level": 1,
+          "id": "4-basic-constraints-for-secondary-development",
+          "title": "4. Basic Constraints for Secondary Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/04-second_develop_constraints_overview#4-basic-constraints-for-secondary-development"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "05-second_develop_program_deployment",
+      "title": "5. Secondary Development Program Deployment",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "headings": [
+        {
+          "level": 2,
+          "id": "51-development-tools-and-installation",
+          "title": "5.1 Development Tools and Installation",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#51-development-tools-and-installation"
+        },
+        {
+          "level": 3,
+          "id": "511-system-requirements",
+          "title": "5.1.1 System Requirements",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#511-system-requirements"
+        },
+        {
+          "level": 3,
+          "id": "512-create-the-container-development-environment",
+          "title": "5.1.2 Create the Container Development Environment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#512-create-the-container-development-environment"
+        },
+        {
+          "level": 3,
+          "id": "513-container-contents",
+          "title": "5.1.3 Container Contents",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#513-container-contents"
+        },
+        {
+          "level": 2,
+          "id": "52-update-methods",
+          "title": "5.2 Update Methods",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#52-update-methods"
+        },
+        {
+          "level": 3,
+          "id": "522-how-to-choose-an-update-method",
+          "title": "5.2.2 How to Choose an Update Method?",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#522-how-to-choose-an-update-method"
+        },
+        {
+          "level": 3,
+          "id": "523-full-image-update",
+          "title": "5.2.3 Full Image Update",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#523-full-image-update"
+        },
+        {
+          "level": 3,
+          "id": "524-devkit-package-update",
+          "title": "5.2.4 DevKit Package Update",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#524-devkit-package-update"
+        },
+        {
+          "level": 3,
+          "id": "525-update-the-workspace-project",
+          "title": "5.2.5 Update the Workspace Project",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#525-update-the-workspace-project"
+        },
+        {
+          "level": 3,
+          "id": "526-notes",
+          "title": "5.2.6 Notes",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#526-notes"
+        },
+        {
+          "level": 2,
+          "id": "53-third-party-library-management",
+          "title": "5.3 Third-Party Library Management",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#53-third-party-library-management"
+        },
+        {
+          "level": 3,
+          "id": "531-third-party-library-definition-chain",
+          "title": "5.3.1 Third-Party Library Definition Chain",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#531-third-party-library-definition-chain"
+        },
+        {
+          "level": 3,
+          "id": "532-register-external-repositories",
+          "title": "5.3.2 Register External Repositories",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#532-register-external-repositories"
+        },
+        {
+          "level": 3,
+          "id": "533-unified-entry-point",
+          "title": "5.3.3 Unified Entry Point",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#533-unified-entry-point"
+        },
+        {
+          "level": 3,
+          "id": "534-forward-dependencies-to-the-application-repository",
+          "title": "5.3.4 Forward Dependencies to the Application Repository",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#534-forward-dependencies-to-the-application-repository"
+        },
+        {
+          "level": 3,
+          "id": "535-add-a-third-party-library",
+          "title": "5.3.5 Add a Third-Party Library",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#535-add-a-third-party-library"
+        },
+        {
+          "level": 2,
+          "id": "54-sdk-dependency-description",
+          "title": "5.4 SDK Dependency Description",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#54-sdk-dependency-description"
+        },
+        {
+          "level": 3,
+          "id": "541-architecture-path-definitions",
+          "title": "5.4.1 Architecture Path Definitions",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#541-architecture-path-definitions"
+        },
+        {
+          "level": 3,
+          "id": "542-sdk-repository-structure",
+          "title": "5.4.2 SDK Repository Structure",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#542-sdk-repository-structure"
+        },
+        {
+          "level": 3,
+          "id": "543-core-libraries",
+          "title": "5.4.3 Core Libraries",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#543-core-libraries"
+        },
+        {
+          "level": 3,
+          "id": "544-build-definition-example",
+          "title": "5.4.4 BUILD Definition Example",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#544-build-definition-example"
+        },
+        {
+          "level": 3,
+          "id": "545-use-sdk-dependencies-in-the-application-repository",
+          "title": "5.4.5 Use SDK Dependencies in the Application Repository",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#545-use-sdk-dependencies-in-the-application-repository"
+        },
+        {
+          "level": 2,
+          "id": "55-module-development",
+          "title": "5.5 Module Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#55-module-development"
+        },
+        {
+          "level": 3,
+          "id": "551-aimrt-module",
+          "title": "5.5.1 AimRT Module",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#551-aimrt-module"
+        },
+        {
+          "level": 3,
+          "id": "552-native-c-development",
+          "title": "5.5.2 Native C++ Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development"
+        },
+        {
+          "level": 2,
+          "id": "56-build-and-deployment",
+          "title": "5.6 Build and Deployment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#56-build-and-deployment"
+        },
+        {
+          "level": 3,
+          "id": "561-build",
+          "title": "5.6.1 Build",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#561-build"
+        },
+        {
+          "level": 3,
+          "id": "562-deploy-to-the-target-device",
+          "title": "5.6.2 Deploy to the Target Device",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#562-deploy-to-the-target-device"
+        },
+        {
+          "level": 2,
+          "id": "57-python-packaging-and-deployment",
+          "title": "5.7 Python Packaging and Deployment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#57-python-packaging-and-deployment"
+        },
+        {
+          "level": 3,
+          "id": "571-directory-structure",
+          "title": "5.7.1 Directory Structure",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#571-directory-structure"
+        },
+        {
+          "level": 3,
+          "id": "572-channel-examples",
+          "title": "5.7.2 Channel Examples",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#572-channel-examples"
+        },
+        {
+          "level": 3,
+          "id": "573-rpc-examples",
+          "title": "5.7.3 RPC Examples",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#573-rpc-examples"
+        },
+        {
+          "level": 3,
+          "id": "574-python-environment-requirements",
+          "title": "5.7.4 Python Environment Requirements",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#574-python-environment-requirements"
+        },
+        {
+          "level": 3,
+          "id": "575-package-the-runtime-environment",
+          "title": "5.7.5 Package the Runtime Environment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#575-package-the-runtime-environment"
+        },
+        {
+          "level": 3,
+          "id": "576-run",
+          "title": "5.7.6 Run",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#576-run"
+        }
+      ],
+      "links": [
+        {
+          "label": "5.1 Development Tools and Installation",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#51-development-tools-and-installation"
+        },
+        {
+          "label": "5.1.1 System Requirements",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#511-system-requirements"
+        },
+        {
+          "label": "5.1.2 Create the Container Development Environment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#512-create-the-container-development-environment"
+        },
+        {
+          "label": "AimDK Download Center",
+          "url": "https://open.agibot.com/docs/aimdk/downloads"
+        },
+        {
+          "label": "5.1.3 Container Contents",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#513-container-contents"
+        },
+        {
+          "label": "/sdk directory",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#sdk-directory"
+        },
+        {
+          "label": "/opt/rockship directory",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#optrockship-directory"
+        },
+        {
+          "label": "/opt/nvidia",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#optnvidia"
+        },
+        {
+          "label": "/workspaces/aimde directory",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#workspacesaimde-directory"
+        },
+        {
+          "label": "5.2 Update Methods",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#52-update-methods"
+        },
+        {
+          "label": "5.2.2 How to Choose an Update Method?",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#522-how-to-choose-an-update-method"
+        },
+        {
+          "label": "5.2.3 Full Image Update",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#523-full-image-update"
+        },
+        {
+          "label": "5.2.4 DevKit Package Update",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#524-devkit-package-update"
+        },
+        {
+          "label": "5.2.5 Update the Workspace Project",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#525-update-the-workspace-project"
+        },
+        {
+          "label": "5.2.6 Notes",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#526-notes"
+        },
+        {
+          "label": "5.3 Third-Party Library Management",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#53-third-party-library-management"
+        },
+        {
+          "label": "5.3.1 Third-Party Library Definition Chain",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#531-third-party-library-definition-chain"
+        },
+        {
+          "label": "5.3.2 Register External Repositories",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#532-register-external-repositories"
+        },
+        {
+          "label": "5.3.3 Unified Entry Point",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#533-unified-entry-point"
+        },
+        {
+          "label": "5.3.4 Forward Dependencies to the Application Repository",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#534-forward-dependencies-to-the-application-repository"
+        },
+        {
+          "label": "5.3.5 Add a Third-Party Library",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#535-add-a-third-party-library"
+        },
+        {
+          "label": "5.4 SDK Dependency Description",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#54-sdk-dependency-description"
+        },
+        {
+          "label": "5.4.1 Architecture Path Definitions",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#541-architecture-path-definitions"
+        },
+        {
+          "label": "5.4.2 SDK Repository Structure",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#542-sdk-repository-structure"
+        },
+        {
+          "label": "5.4.3 Core Libraries",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#543-core-libraries"
+        },
+        {
+          "label": "5.4.4 BUILD Definition Example",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#544-build-definition-example"
+        },
+        {
+          "label": "5.4.5 Use SDK Dependencies in the Application Repository",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#545-use-sdk-dependencies-in-the-application-repository"
+        },
+        {
+          "label": "5.5 Module Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#55-module-development"
+        },
+        {
+          "label": "5.5.1 AimRT Module",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#551-aimrt-module"
+        },
+        {
+          "label": "AimRT",
+          "url": "https://github.com/AimRT/AimRT"
+        },
+        {
+          "label": "https://docs.aimrt.org/tutorials/index.html",
+          "url": "https://docs.aimrt.org/tutorials/index.html"
+        },
+        {
+          "label": "5.5.1.1 Implement the Module",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5511-implement-the-module"
+        },
+        {
+          "label": "5.5.1.2 Module BUILD ( module/aimdk_example/BUILD )",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5512-module-build-moduleaimdkexamplebuild"
+        },
+        {
+          "label": "5.5.1.3 Implement the Application Entry Point ( app/aimdk_example/main.cpp )",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5513-implement-the-application-entry-point-appaimdkexamplemaincpp"
+        },
+        {
+          "label": "5.5.1.4 Configuration File ( config/aimdk_example/aimdk_example_config.yaml )",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5514-configuration-file-configaimdkexampleaimdkexampleconfigyaml"
+        },
+        {
+          "label": "5.5.1.5 Startup Script and Packaging",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5515-startup-script-and-packaging"
+        },
+        {
+          "label": "5.5.1.6 Build and Run",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5516-build-and-run"
+        },
+        {
+          "label": "Build and Deployment",
+          "url": "https://agirobot.feishu.cn/wiki/FRYWwCeiqiN9PckJrZ6cyGS4nZd"
+        },
+        {
+          "label": "5.5.1.7 Add a Custom Module",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5517-add-a-custom-module"
+        },
+        {
+          "label": "5.5.1.8 Common Communication Patterns",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5518-common-communication-patterns"
+        },
+        {
+          "label": "5.5.1.9 Common Issues",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5519-common-issues"
+        },
+        {
+          "label": "5.5.2 Native C++ Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development"
+        },
+        {
+          "label": "5.5.2.1 Directory Structure",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5521-directory-structure"
+        },
+        {
+          "label": "5.5.2.2 Channel Examples",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5522-channel-examples"
+        },
+        {
+          "label": "5.5.2.3 Subscribe to ROS2 Messages",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5523-subscribe-to-ros2-messages"
+        },
+        {
+          "label": "5.5.2.4 RPC Examples",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5524-rpc-examples"
+        },
+        {
+          "label": "http://10.42.10.12:56322/rpc/aimdk.protocol.MotionControlJointService/GetArmJointState",
+          "url": "http://10.42.10.12:56322/rpc/aimdk.protocol.MotionControlJointService/GetArmJointState"
+        },
+        {
+          "label": "http://10.42.10.12:56322/rpc/aimdk.protocol.MotionControlActionService/GetAction",
+          "url": "http://10.42.10.12:56322/rpc/aimdk.protocol.MotionControlActionService/GetAction"
+        },
+        {
+          "label": "5.5.2.5 ROS2 Service： AbandonAudioFocus",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5525-ros2-serviceabandonaudiofocus"
+        },
+        {
+          "label": "5.5.2.6 BUILD Dependencies",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5526-build-dependencies"
+        },
+        {
+          "label": "5.5.2.7 Build",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5527-build"
+        },
+        {
+          "label": "5.5.2.8 Run",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5528-run"
+        },
+        {
+          "label": "5.6 Build and Deployment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#56-build-and-deployment"
+        },
+        {
+          "label": "5.6.1 Build",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#561-build"
+        },
+        {
+          "label": "5.6.2 Deploy to the Target Device",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#562-deploy-to-the-target-device"
+        },
+        {
+          "label": "5.6.2.1 Transfer the Installation Package",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5621-transfer-the-installation-package"
+        },
+        {
+          "label": "5.6.2.2 Log In to the Device and Extract",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5622-log-in-to-the-device-and-extract"
+        },
+        {
+          "label": "5.6.2.3 Start",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5623-start"
+        },
+        {
+          "label": "5.6.2.4 Package Layout and Startup Script",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5624-package-layout-and-startup-script"
+        },
+        {
+          "label": "5.6.2.5 Debugging",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5625-debugging"
+        },
+        {
+          "label": "5.6.2.6 Common Issues",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5626-common-issues"
+        },
+        {
+          "label": "5.7 Python Packaging and Deployment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#57-python-packaging-and-deployment"
+        },
+        {
+          "label": "5.7.1 Directory Structure",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#571-directory-structure"
+        },
+        {
+          "label": "5.7.2 Channel Examples",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#572-channel-examples"
+        },
+        {
+          "label": "5.7.3 RPC Examples",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#573-rpc-examples"
+        },
+        {
+          "label": "5.7.4 Python Environment Requirements",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#574-python-environment-requirements"
+        },
+        {
+          "label": "5.7.5 Package the Runtime Environment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#575-package-the-runtime-environment"
+        },
+        {
+          "label": "5.7.6 Run",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#576-run"
+        },
+        {
+          "label": "5.7.6.1 Local",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5761-local"
+        },
+        {
+          "label": "5.7.6.2 Deploy to the Device",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#5762-deploy-to-the-device"
+        }
+      ]
+    },
+    {
+      "slug": "06-second_develop_quick_start",
+      "title": "6. Quick Start for Secondary Development",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start",
+      "headings": [
+        {
+          "level": 1,
+          "id": "6-quick-start-for-secondary-development",
+          "title": "6. Quick Start for Secondary Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#6-quick-start-for-secondary-development"
+        },
+        {
+          "level": 2,
+          "id": "61-prerequisites",
+          "title": "6.1 Prerequisites",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#61-prerequisites"
+        },
+        {
+          "level": 3,
+          "id": "611-connect-to-hdu",
+          "title": "6.1.1 Connect to HDU",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#611-connect-to-hdu"
+        },
+        {
+          "level": 3,
+          "id": "612-create-deployment-program-folder",
+          "title": "6.1.2 Create Deployment Program Folder",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#612-create-deployment-program-folder"
+        },
+        {
+          "level": 3,
+          "id": "613-create-python-virtual-environment",
+          "title": "6.1.3 Create Python Virtual Environment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#613-create-python-virtual-environment"
+        },
+        {
+          "level": 2,
+          "id": "62-example-query-silent-mode-program",
+          "title": "6.2 Example: Query Silent Mode Program",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#62-example-query-silent-mode-program"
+        },
+        {
+          "level": 2,
+          "id": "63-example-get-robot-upper-limb-joint-state",
+          "title": "6.3 Example: Get Robot Upper Limb Joint State",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#63-example-get-robot-upper-limb-joint-state"
+        },
+        {
+          "level": 2,
+          "id": "64-example-control-robot-motion",
+          "title": "6.4 Example: Control Robot Motion",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#64-example-control-robot-motion"
+        },
+        {
+          "level": 2,
+          "id": "65-example-robot-tts-broadcast",
+          "title": "6.5 Example: Robot TTS Broadcast",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#65-example-robot-tts-broadcast"
+        },
+        {
+          "level": 2,
+          "id": "66-ros2-communication-over-a-wired-connection",
+          "title": "6.6 ROS2 Communication over a Wired Connection",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#66-ros2-communication-over-a-wired-connection"
+        }
+      ],
+      "links": [
+        {
+          "label": "6.1 Prerequisites",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#61-prerequisites"
+        },
+        {
+          "label": "6.1.1 Connect to HDU",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#611-connect-to-hdu"
+        },
+        {
+          "label": "6.1.2 Create Deployment Program Folder",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#612-create-deployment-program-folder"
+        },
+        {
+          "label": "6.1.3 Create Python Virtual Environment",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#613-create-python-virtual-environment"
+        },
+        {
+          "label": "6.2 Example: Query Silent Mode Program",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#62-example-query-silent-mode-program"
+        },
+        {
+          "label": "6.3 Example: Get Robot Upper Limb Joint State",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#63-example-get-robot-upper-limb-joint-state"
+        },
+        {
+          "label": "6.4 Example: Control Robot Motion",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#64-example-control-robot-motion"
+        },
+        {
+          "label": "6.5 Example: Robot TTS Broadcast",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#65-example-robot-tts-broadcast"
+        },
+        {
+          "label": "6.6 ROS2 Communication over a Wired Connection",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/06-second_develop_quick_start#66-ros2-communication-over-a-wired-connection"
+        }
+      ]
+    },
+    {
+      "slug": "07-00-detailed_interface",
+      "title": "7. Detailed Interface Documentation",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-00-detailed_interface",
+      "headings": [
+        {
+          "level": 1,
+          "id": "7-detailed-interface-documentation",
+          "title": "7. Detailed Interface Documentation",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-00-detailed_interface#7-detailed-interface-documentation"
+        }
+      ],
+      "links": []
+    },
+    {
+      "slug": "07-01-motion_control",
+      "title": "7.1 Motion Control",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "headings": [
+        {
+          "level": 1,
+          "id": "71-motion-control",
+          "title": "7.1 Motion Control",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#71-motion-control"
+        },
+        {
+          "level": 3,
+          "id": "711-overview",
+          "title": "7.1.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#711-overview"
+        },
+        {
+          "level": 3,
+          "id": "712-state-machine-switching-and-query-rpc-interfaces",
+          "title": "7.1.2 State Machine Switching and Query RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#712-state-machine-switching-and-query-rpc-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "713-rpc-interface-for-querying-available-robot-actions",
+          "title": "7.1.3 RPC Interface for Querying Available Robot Actions",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#713-rpc-interface-for-querying-available-robot-actions"
+        },
+        {
+          "level": 3,
+          "id": "714-walking-control-command-topic-interface",
+          "title": "7.1.4 Walking Control Command Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#714-walking-control-command-topic-interface"
+        },
+        {
+          "level": 3,
+          "id": "715-arm-control-command-and-state-topic-interfaces",
+          "title": "7.1.5 Arm Control Command and State Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#715-arm-control-command-and-state-topic-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "716-arm-control-command-configurable-kpkd",
+          "title": "7.1.6 Arm Control Command (Configurable Kp/Kd)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#716-arm-control-command-configurable-kpkd"
+        },
+        {
+          "level": 3,
+          "id": "717-waist-posture-control-topic-interface",
+          "title": "7.1.7 Waist Posture Control Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#717-waist-posture-control-topic-interface"
+        },
+        {
+          "level": 3,
+          "id": "718-neck-control-command-and-state-topic-interfaces",
+          "title": "7.1.8 Neck Control Command and State Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#718-neck-control-command-and-state-topic-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "719-neck-control-command-configurable-kpkd",
+          "title": "7.1.9 Neck Control Command (Configurable Kp/Kd)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#719-neck-control-command-configurable-kpkd"
+        },
+        {
+          "level": 3,
+          "id": "7110-finger-control-command-and-state-topic-interfaces",
+          "title": "7.1.10 Finger Control Command and State Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7110-finger-control-command-and-state-topic-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "7111-enable-arm-compliance",
+          "title": "7.1.11 Enable Arm Compliance",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7111-enable-arm-compliance"
+        },
+        {
+          "level": 3,
+          "id": "7112-disable-arm-compliance",
+          "title": "7.1.12 Disable Arm Compliance",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7112-disable-arm-compliance"
+        },
+        {
+          "level": 3,
+          "id": "7113-check-arm-compliance",
+          "title": "7.1.13 Check Arm Compliance",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7113-check-arm-compliance"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.1.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#711-overview"
+        },
+        {
+          "label": "7.1.2 State Machine Switching and Query RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#712-state-machine-switching-and-query-rpc-interfaces"
+        },
+        {
+          "label": "7.1.3 RPC Interface for Querying Available Robot Actions",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#713-rpc-interface-for-querying-available-robot-actions"
+        },
+        {
+          "label": "7.1.4 Walking Control Command Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#714-walking-control-command-topic-interface"
+        },
+        {
+          "label": "7.1.5 Arm Control Command and State Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#715-arm-control-command-and-state-topic-interfaces"
+        },
+        {
+          "label": "sensor_msgs::msg::JointState",
+          "url": "https://docs.ros.org/en/jazzy/p/dummy_sensors/search.html?q=JointState&check_keywords=yes&area=default"
+        },
+        {
+          "label": "sensor_msgs::msg::JointState",
+          "url": "https://docs.ros.org/en/humble/p/sensor_msgs/msg/JointState.html"
+        },
+        {
+          "label": "7.1.6 Arm Control Command (Configurable Kp/Kd)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#716-arm-control-command-configurable-kpkd"
+        },
+        {
+          "label": "7.1.7 Waist Posture Control Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#717-waist-posture-control-topic-interface"
+        },
+        {
+          "label": "7.1.8 Neck Control Command and State Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#718-neck-control-command-and-state-topic-interfaces"
+        },
+        {
+          "label": "7.1.9 Neck Control Command (Configurable Kp/Kd)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#719-neck-control-command-configurable-kpkd"
+        },
+        {
+          "label": "7.1.10 Finger Control Command and State Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7110-finger-control-command-and-state-topic-interfaces"
+        },
+        {
+          "label": "7.1.11 Enable Arm Compliance",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7111-enable-arm-compliance"
+        },
+        {
+          "label": "7.1.12 Disable Arm Compliance",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7112-disable-arm-compliance"
+        },
+        {
+          "label": "7.1.13 Check Arm Compliance",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7113-check-arm-compliance"
+        }
+      ]
+    },
+    {
+      "slug": "07-02-audio_play",
+      "title": "7.2 TTS/Audio Playback Section",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "headings": [
+        {
+          "level": 1,
+          "id": "72-ttsaudio-playback-section",
+          "title": "7.2 TTS/Audio Playback Section",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#72-ttsaudio-playback-section"
+        },
+        {
+          "level": 3,
+          "id": "721-overview",
+          "title": "7.2.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#721-overview"
+        },
+        {
+          "level": 3,
+          "id": "722-tts-playback-rpc-interface",
+          "title": "7.2.2 TTS Playback RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#722-tts-playback-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "723-audio-file-playback-rpc-interface",
+          "title": "7.2.3 Audio File Playback RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#723-audio-file-playback-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "724-ttsaudio-file-playback-status-query-rpc-interface",
+          "title": "7.2.4 TTS/Audio File Playback Status Query RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#724-ttsaudio-file-playback-status-query-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "725-ttsaudio-file-playback-status-topic-interface",
+          "title": "7.2.5 TTS/Audio File Playback Status Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#725-ttsaudio-file-playback-status-topic-interface"
+        },
+        {
+          "level": 3,
+          "id": "726-ttsaudio-file-playback-interruption-rpc-interface",
+          "title": "7.2.6 TTS/Audio File Playback Interruption RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#726-ttsaudio-file-playback-interruption-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "727-audio-volume-getset-rpc-interface",
+          "title": "7.2.7 Audio Volume Get/Set RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#727-audio-volume-getset-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "728-request-audio-focus",
+          "title": "7.2.8 Request Audio Focus",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#728-request-audio-focus"
+        },
+        {
+          "level": 3,
+          "id": "729-release-audio-focus",
+          "title": "7.2.9 Release Audio Focus",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#729-release-audio-focus"
+        },
+        {
+          "level": 3,
+          "id": "7210-play-streaming-audio",
+          "title": "7.2.10 Play Streaming Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#7210-play-streaming-audio"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.2.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#721-overview"
+        },
+        {
+          "label": "7.2.2 TTS Playback RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#722-tts-playback-rpc-interface"
+        },
+        {
+          "label": "7.2.3 Audio File Playback RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#723-audio-file-playback-rpc-interface"
+        },
+        {
+          "label": "7.2.4 TTS/Audio File Playback Status Query RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#724-ttsaudio-file-playback-status-query-rpc-interface"
+        },
+        {
+          "label": "7.2.5 TTS/Audio File Playback Status Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#725-ttsaudio-file-playback-status-topic-interface"
+        },
+        {
+          "label": "7.2.6 TTS/Audio File Playback Interruption RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#726-ttsaudio-file-playback-interruption-rpc-interface"
+        },
+        {
+          "label": "7.2.7 Audio Volume Get/Set RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#727-audio-volume-getset-rpc-interface"
+        },
+        {
+          "label": "7.2.8 Request Audio Focus",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#728-request-audio-focus"
+        },
+        {
+          "label": "7.2.9 Release Audio Focus",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#729-release-audio-focus"
+        },
+        {
+          "label": "7.2.10 Play Streaming Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#7210-play-streaming-audio"
+        }
+      ]
+    },
+    {
+      "slug": "07-03-microphone",
+      "title": "7.3 Microphone Management",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "headings": [
+        {
+          "level": 1,
+          "id": "73-microphone-management",
+          "title": "7.3 Microphone Management",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#73-microphone-management"
+        },
+        {
+          "level": 3,
+          "id": "731-overview",
+          "title": "7.3.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#731-overview"
+        },
+        {
+          "level": 3,
+          "id": "732-set-silent-mode-rpc-interface",
+          "title": "7.3.2 Set Silent Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#732-set-silent-mode-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "733-query-silent-mode-rpc-interface",
+          "title": "7.3.3 Query Silent Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#733-query-silent-mode-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "734-set-interaction-operation-mode-rpc-interface",
+          "title": "7.3.4 Set Interaction Operation Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#734-set-interaction-operation-mode-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "735-get-interaction-operation-mode-rpc-interface",
+          "title": "7.3.5 Get Interaction Operation Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#735-get-interaction-operation-mode-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "736-noise-reduced-microphone-audio-topic-interface",
+          "title": "7.3.6 Noise-Reduced Microphone Audio Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#736-noise-reduced-microphone-audio-topic-interface"
+        },
+        {
+          "level": 3,
+          "id": "737-wake-up-result-reporting",
+          "title": "7.3.7 Wake-Up Result Reporting",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#737-wake-up-result-reporting"
+        },
+        {
+          "level": 3,
+          "id": "738-built-in-and-external-microphone-switching-rpc-interface",
+          "title": "7.3.8 Built-in and External Microphone Switching RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#738-built-in-and-external-microphone-switching-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "739-built-in-and-external-microphone-status-query-rpc-interface",
+          "title": "7.3.9 Built-in and External Microphone Status Query RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#739-built-in-and-external-microphone-status-query-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "7310-built-in-microphone-wake-up-angle-interface",
+          "title": "7.3.10 Built-in Microphone Wake-Up Angle Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#7310-built-in-microphone-wake-up-angle-interface"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.3.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#731-overview"
+        },
+        {
+          "label": "7.3.2 Set Silent Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#732-set-silent-mode-rpc-interface"
+        },
+        {
+          "label": "7.3.3 Query Silent Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#733-query-silent-mode-rpc-interface"
+        },
+        {
+          "label": "7.3.4 Set Interaction Operation Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#734-set-interaction-operation-mode-rpc-interface"
+        },
+        {
+          "label": "7.3.5 Get Interaction Operation Mode RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#735-get-interaction-operation-mode-rpc-interface"
+        },
+        {
+          "label": "7.3.6 Noise-Reduced Microphone Audio Topic Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#736-noise-reduced-microphone-audio-topic-interface"
+        },
+        {
+          "label": "7.3.7 Wake-Up Result Reporting",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#737-wake-up-result-reporting"
+        },
+        {
+          "label": "7.3.8 Built-in and External Microphone Switching RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#738-built-in-and-external-microphone-switching-rpc-interface"
+        },
+        {
+          "label": "7.3.9 Built-in and External Microphone Status Query RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#739-built-in-and-external-microphone-status-query-rpc-interface"
+        },
+        {
+          "label": "7.3.10 Built-in Microphone Wake-Up Angle Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#7310-built-in-microphone-wake-up-angle-interface"
+        }
+      ]
+    },
+    {
+      "slug": "07-04-troubleshooting",
+      "title": "7.4 Fault Diagnosis Section",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting",
+      "headings": [
+        {
+          "level": 3,
+          "id": "741-overview",
+          "title": "7.4.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting#741-overview"
+        },
+        {
+          "level": 3,
+          "id": "742-get-current-alert-list-rpc-interface",
+          "title": "7.4.2 Get Current Alert List RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting#742-get-current-alert-list-rpc-interface"
+        },
+        {
+          "level": 3,
+          "id": "743-other-health-diagnostic-interfaces",
+          "title": "7.4.3 Other Health Diagnostic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting#743-other-health-diagnostic-interfaces"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.4.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting#741-overview"
+        },
+        {
+          "label": "7.4.2 Get Current Alert List RPC Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting#742-get-current-alert-list-rpc-interface"
+        },
+        {
+          "label": "7.4.3 Other Health Diagnostic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting#743-other-health-diagnostic-interfaces"
+        }
+      ]
+    },
+    {
+      "slug": "07-05-resource_manager",
+      "title": "7.5 Resource Management",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager",
+      "headings": [
+        {
+          "level": 2,
+          "id": "751-overview",
+          "title": "7.5.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#751-overview"
+        },
+        {
+          "level": 2,
+          "id": "752-partial-parameter-declarations",
+          "title": "7.5.2 Partial Parameter Declarations",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#752-partial-parameter-declarations"
+        },
+        {
+          "level": 2,
+          "id": "753-create-resource",
+          "title": "7.5.3 Create Resource",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#753-create-resource"
+        },
+        {
+          "level": 2,
+          "id": "754-delete-resource",
+          "title": "7.5.4 Delete Resource",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#754-delete-resource"
+        },
+        {
+          "level": 2,
+          "id": "755-update-emoticon-resource",
+          "title": "7.5.5 Update Emoticon Resource",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#755-update-emoticon-resource"
+        },
+        {
+          "level": 2,
+          "id": "756-get-resource-list",
+          "title": "7.5.6 Get Resource List",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#756-get-resource-list"
+        },
+        {
+          "level": 2,
+          "id": "757-get-single-resource-information",
+          "title": "7.5.7 Get Single Resource Information",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#757-get-single-resource-information"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.5.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#751-overview"
+        },
+        {
+          "label": "7.5.2 Partial Parameter Declarations",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#752-partial-parameter-declarations"
+        },
+        {
+          "label": "7.5.3 Create Resource",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#753-create-resource"
+        },
+        {
+          "label": "7.5.4 Delete Resource",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#754-delete-resource"
+        },
+        {
+          "label": "7.5.5 Update Emoticon Resource",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#755-update-emoticon-resource"
+        },
+        {
+          "label": "7.5.6 Get Resource List",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#756-get-resource-list"
+        },
+        {
+          "label": "7.5.7 Get Single Resource Information",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#757-get-single-resource-information"
+        }
+      ]
+    },
+    {
+      "slug": "07-06-sensor_data",
+      "title": "7.6 Sensor Data",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "headings": [
+        {
+          "level": 1,
+          "id": "76-sensor-data",
+          "title": "7.6 Sensor Data",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#76-sensor-data"
+        },
+        {
+          "level": 3,
+          "id": "761-overview",
+          "title": "7.6.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#761-overview"
+        },
+        {
+          "level": 3,
+          "id": "762-sensor-topic-interfaces",
+          "title": "7.6.2 Sensor Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.6.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#761-overview"
+        },
+        {
+          "label": "7.6.2 Sensor Topic Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces"
+        },
+        {
+          "label": "foxglove_msgs::msg::CompressedVideo",
+          "url": "https://docs.ros.org/en/noetic/api/foxglove_msgs/html/msg/CompressedVideo.html"
+        },
+        {
+          "label": "sensor_msgs::msg::Image",
+          "url": "https://docs.ros.org/en/ros2_packages/humble/api/sensor_msgs/msg/Image.html"
+        },
+        {
+          "label": "sensor_msgs::msg::PointCloud2",
+          "url": "https://docs.ros.org/en/ros2_packages/humble/api/sensor_msgs/msg/PointCloud2.html"
+        },
+        {
+          "label": "Camera Topic Publishing Modes",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#camera-topic-publishing-modes"
+        },
+        {
+          "label": "Querying Intrinsic and Extrinsic Parameters",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#querying-intrinsic-and-extrinsic-parameters"
+        }
+      ]
+    },
+    {
+      "slug": "07-07-system_status",
+      "title": "7.7 System Status",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status",
+      "headings": [
+        {
+          "level": 1,
+          "id": "77-system-status",
+          "title": "7.7 System Status",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#77-system-status"
+        },
+        {
+          "level": 3,
+          "id": "771-bms-status-subscription-interface",
+          "title": "7.7.1 BMS Status Subscription Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#771-bms-status-subscription-interface"
+        },
+        {
+          "level": 3,
+          "id": "772-emergency-stop-status-subscription-interface",
+          "title": "7.7.2 Emergency Stop Status Subscription Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#772-emergency-stop-status-subscription-interface"
+        },
+        {
+          "level": 3,
+          "id": "773-active-emergency-stop-interface",
+          "title": "7.7.3 Active Emergency Stop Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#773-active-emergency-stop-interface"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.7.1 BMS Status Subscription Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#771-bms-status-subscription-interface"
+        },
+        {
+          "label": "7.7.2 Emergency Stop Status Subscription Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#772-emergency-stop-status-subscription-interface"
+        },
+        {
+          "label": "7.7.3 Active Emergency Stop Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#773-active-emergency-stop-interface"
+        }
+      ]
+    },
+    {
+      "slug": "07-08-map",
+      "title": "7.8 Map Management",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "headings": [
+        {
+          "level": 1,
+          "id": "78-map-management",
+          "title": "7.8 Map Management",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#78-map-management"
+        },
+        {
+          "level": 3,
+          "id": "781-overview",
+          "title": "7.8.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#781-overview"
+        },
+        {
+          "level": 3,
+          "id": "782-rpc-interface-for-getting-2d-map-data",
+          "title": "7.8.2 RPC Interface for Getting 2D Map Data",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#782-rpc-interface-for-getting-2d-map-data"
+        },
+        {
+          "level": 3,
+          "id": "783-rpc-interface-for-getting-the-map-list",
+          "title": "7.8.3 RPC Interface for Getting the Map List",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#783-rpc-interface-for-getting-the-map-list"
+        },
+        {
+          "level": 3,
+          "id": "784-rpc-interface-for-getting-the-current-working-map-id",
+          "title": "7.8.4 RPC Interface for Getting the Current Working Map ID",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#784-rpc-interface-for-getting-the-current-working-map-id"
+        },
+        {
+          "level": 3,
+          "id": "785-rpc-interface-for-getting-map-topology-data",
+          "title": "7.8.5 RPC Interface for Getting Map Topology Data",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#785-rpc-interface-for-getting-map-topology-data"
+        },
+        {
+          "level": 2,
+          "id": "786-rpc-interface-for-creating-a-map",
+          "title": "7.8.6 RPC Interface for Creating a Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#786-rpc-interface-for-creating-a-map"
+        },
+        {
+          "level": 2,
+          "id": "787-rpc-interface-for-stopping-mapping",
+          "title": "7.8.7 RPC Interface for Stopping Mapping",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#787-rpc-interface-for-stopping-mapping"
+        },
+        {
+          "level": 2,
+          "id": "788-rpc-interface-for-modifying-a-map",
+          "title": "7.8.8 RPC Interface for Modifying a Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#788-rpc-interface-for-modifying-a-map"
+        },
+        {
+          "level": 2,
+          "id": "789-rpc-interface-for-renaming-a-map",
+          "title": "7.8.9 RPC Interface for Renaming a Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#789-rpc-interface-for-renaming-a-map"
+        },
+        {
+          "level": 2,
+          "id": "7810-rpc-interface-for-getting-mapping-data",
+          "title": "7.8.10 RPC Interface for Getting Mapping Data",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7810-rpc-interface-for-getting-mapping-data"
+        },
+        {
+          "level": 2,
+          "id": "7811-rpc-interface-for-relocalization",
+          "title": "7.8.11 RPC Interface for Relocalization",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7811-rpc-interface-for-relocalization"
+        },
+        {
+          "level": 2,
+          "id": "7812-rpc-interface-for-setting-the-current-working-map",
+          "title": "7.8.12 RPC Interface for Setting the Current Working Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7812-rpc-interface-for-setting-the-current-working-map"
+        },
+        {
+          "level": 2,
+          "id": "7813-map-management-ui-example",
+          "title": "7.8.13 Map Management UI Example",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7813-map-management-ui-example"
+        },
+        {
+          "level": 2,
+          "id": "7814-manual-relocalization-interface",
+          "title": "7.8.14 Manual Relocalization Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7814-manual-relocalization-interface"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.8.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#781-overview"
+        },
+        {
+          "label": "7.8.2 RPC Interface for Getting 2D Map Data",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#782-rpc-interface-for-getting-2d-map-data"
+        },
+        {
+          "label": "7.8.3 RPC Interface for Getting the Map List",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#783-rpc-interface-for-getting-the-map-list"
+        },
+        {
+          "label": "7.8.4 RPC Interface for Getting the Current Working Map ID",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#784-rpc-interface-for-getting-the-current-working-map-id"
+        },
+        {
+          "label": "7.8.5 RPC Interface for Getting Map Topology Data",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#785-rpc-interface-for-getting-map-topology-data"
+        },
+        {
+          "label": "7.8.6 RPC Interface for Creating a Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#786-rpc-interface-for-creating-a-map"
+        },
+        {
+          "label": "7.8.7 RPC Interface for Stopping Mapping",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#787-rpc-interface-for-stopping-mapping"
+        },
+        {
+          "label": "7.8.8 RPC Interface for Modifying a Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#788-rpc-interface-for-modifying-a-map"
+        },
+        {
+          "label": "7.8.9 RPC Interface for Renaming a Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#789-rpc-interface-for-renaming-a-map"
+        },
+        {
+          "label": "7.8.10 RPC Interface for Getting Mapping Data",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7810-rpc-interface-for-getting-mapping-data"
+        },
+        {
+          "label": "7.8.11 RPC Interface for Relocalization",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7811-rpc-interface-for-relocalization"
+        },
+        {
+          "label": "7.8.12 RPC Interface for Setting the Current Working Map",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7812-rpc-interface-for-setting-the-current-working-map"
+        },
+        {
+          "label": "7.8.13 Map Management UI Example",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7813-map-management-ui-example"
+        },
+        {
+          "label": "7.8.14 Manual Relocalization Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7814-manual-relocalization-interface"
+        }
+      ]
+    },
+    {
+      "slug": "07-09-navigation",
+      "title": "7.9 Planning and Navigation",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "headings": [
+        {
+          "level": 1,
+          "id": "79-planning-and-navigation",
+          "title": "7.9 Planning and Navigation",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#79-planning-and-navigation"
+        },
+        {
+          "level": 3,
+          "id": "791-overview",
+          "title": "7.9.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#791-overview"
+        },
+        {
+          "level": 3,
+          "id": "792-point-to-point-navigation-rpc-interfaces",
+          "title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "793-simple-movement-rpc-interfaces",
+          "title": "7.9.3 Simple Movement RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#793-simple-movement-rpc-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "794-task-query-and-control-rpc-interfaces",
+          "title": "7.9.4 Task Query and Control RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#794-task-query-and-control-rpc-interfaces"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.9.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#791-overview"
+        },
+        {
+          "label": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces"
+        },
+        {
+          "label": "7.9.3 Simple Movement RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#793-simple-movement-rpc-interfaces"
+        },
+        {
+          "label": "7.9.4 Task Query and Control RPC Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#794-task-query-and-control-rpc-interfaces"
+        }
+      ]
+    },
+    {
+      "slug": "07-10-skill_poilt",
+      "title": "7.10 Skill Playback",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "headings": [
+        {
+          "level": 1,
+          "id": "710-skill-playback",
+          "title": "7.10 Skill Playback",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#710-skill-playback"
+        },
+        {
+          "level": 3,
+          "id": "7101-overview",
+          "title": "7.10.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7101-overview"
+        },
+        {
+          "level": 2,
+          "id": "7102-motion-playpausereset-interface",
+          "title": "7.10.2 Motion Play/Pause/Reset Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7102-motion-playpausereset-interface"
+        },
+        {
+          "level": 2,
+          "id": "7103-play-audio",
+          "title": "7.10.3 Play Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7103-play-audio"
+        },
+        {
+          "level": 2,
+          "id": "7104-stop-audio",
+          "title": "7.10.4 Stop Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7104-stop-audio"
+        },
+        {
+          "level": 2,
+          "id": "7105-emoticon-playback",
+          "title": "7.10.5 Emoticon Playback",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7105-emoticon-playback"
+        },
+        {
+          "level": 2,
+          "id": "7106-skill-status-interface",
+          "title": "7.10.6 Skill Status Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7106-skill-status-interface"
+        },
+        {
+          "level": 2,
+          "id": "7107-autonomous-charging-interface",
+          "title": "7.10.7 Autonomous Charging Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7107-autonomous-charging-interface"
+        },
+        {
+          "level": 2,
+          "id": "7108-dance-playback-interface",
+          "title": "7.10.8 Dance Playback Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7108-dance-playback-interface"
+        }
+      ],
+      "links": [
+        {
+          "label": "7.10.1 Overview",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7101-overview"
+        },
+        {
+          "label": "7.10.2 Motion Play/Pause/Reset Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7102-motion-playpausereset-interface"
+        },
+        {
+          "label": "7.10.3 Play Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7103-play-audio"
+        },
+        {
+          "label": "7.10.4 Stop Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7104-stop-audio"
+        },
+        {
+          "label": "7.10.5 Emoticon Playback",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7105-emoticon-playback"
+        },
+        {
+          "label": "7.10.6 Skill Status Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7106-skill-status-interface"
+        },
+        {
+          "label": "7.10.7 Autonomous Charging Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7107-autonomous-charging-interface"
+        },
+        {
+          "label": "7.10.8 Dance Playback Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7108-dance-playback-interface"
+        }
+      ]
+    },
+    {
+      "slug": "08-interactive_guide",
+      "title": "8. Interactive Secondary Development Guide",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide",
+      "headings": [
+        {
+          "level": 1,
+          "id": "8-interactive-secondary-development-guide",
+          "title": "8. Interactive Secondary Development Guide",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#8-interactive-secondary-development-guide"
+        },
+        {
+          "level": 2,
+          "id": "81-linksoul-secondary-development",
+          "title": "8.1 LinkSoul Secondary Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#81-linksoul-secondary-development"
+        },
+        {
+          "level": 3,
+          "id": "workflow",
+          "title": "Workflow",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#workflow"
+        },
+        {
+          "level": 2,
+          "id": "82-full-takeover-by-secondary-development",
+          "title": "8.2 Full Takeover by Secondary Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#82-full-takeover-by-secondary-development"
+        },
+        {
+          "level": 3,
+          "id": "821-disable-agibot-interaction-capabilities",
+          "title": "8.2.1 Disable AgiBot Interaction Capabilities",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#821-disable-agibot-interaction-capabilities"
+        },
+        {
+          "level": 3,
+          "id": "822-obtain-microphone-audio",
+          "title": "8.2.2 Obtain Microphone Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#822-obtain-microphone-audio"
+        },
+        {
+          "level": 3,
+          "id": "823-speaker-audio-playback",
+          "title": "8.2.3 Speaker Audio Playback",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#823-speaker-audio-playback"
+        },
+        {
+          "level": 3,
+          "id": "824-wake-up-result-reporting",
+          "title": "8.2.4 Wake-Up Result Reporting",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#824-wake-up-result-reporting"
+        },
+        {
+          "level": 3,
+          "id": "825-face-recognition-results",
+          "title": "8.2.5 Face Recognition Results",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#825-face-recognition-results"
+        }
+      ],
+      "links": [
+        {
+          "label": "8.1 LinkSoul Secondary Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#81-linksoul-secondary-development"
+        },
+        {
+          "label": "LinkSoul Platform Documentation Center",
+          "url": "https://open.agibot.com/docs/linksoul"
+        },
+        {
+          "label": "https://agirobot.feishu.cn/share/base/form/shrcn89PyePk9S7HvJKOmvYqUUb",
+          "url": "https://agirobot.feishu.cn/share/base/form/shrcn89PyePk9S7HvJKOmvYqUUb"
+        },
+        {
+          "label": "Workflow",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#workflow"
+        },
+        {
+          "label": "Developer Console",
+          "url": "https://open.agibot.com/cn/console/apps"
+        },
+        {
+          "label": "LinkSoul Platform",
+          "url": "https://linksoul.agibot.com/zh-cn/agent"
+        },
+        {
+          "label": "API documentation",
+          "url": "https://open.agibot.com/docs/linksoul/openapi/retriever-proxy/search-by-agent"
+        },
+        {
+          "label": "8.2 Full Takeover by Secondary Development",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#82-full-takeover-by-secondary-development"
+        },
+        {
+          "label": "8.2.1 Disable AgiBot Interaction Capabilities",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#821-disable-agibot-interaction-capabilities"
+        },
+        {
+          "label": "8.2.2 Obtain Microphone Audio",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#822-obtain-microphone-audio"
+        },
+        {
+          "label": "8.2.3 Speaker Audio Playback",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#823-speaker-audio-playback"
+        },
+        {
+          "label": "8.2.4 Wake-Up Result Reporting",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#824-wake-up-result-reporting"
+        },
+        {
+          "label": "8.2.5 Face Recognition Results",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/08-interactive_guide#825-face-recognition-results"
+        }
+      ]
+    },
+    {
+      "slug": "09-hardware_development_guide",
+      "title": "9. Hardware Secondary Development Guide",
+      "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide",
+      "headings": [
+        {
+          "level": 2,
+          "id": "1-power-supply-interface",
+          "title": "1. Power Supply Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#1-power-supply-interface"
+        },
+        {
+          "level": 3,
+          "id": "11-pin-definition",
+          "title": "1.1 Pin Definition",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#11-pin-definition"
+        },
+        {
+          "level": 3,
+          "id": "12-connector-specifications",
+          "title": "1.2 Connector Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#12-connector-specifications"
+        },
+        {
+          "level": 2,
+          "id": "2-service-compartment-interfaces-service-breakout-interfaces",
+          "title": "2. Service Compartment Interfaces (Service Breakout Interfaces)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#2-service-compartment-interfaces-service-breakout-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "21-usb-type-a",
+          "title": "2.1 USB Type-A",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#21-usb-type-a"
+        },
+        {
+          "level": 3,
+          "id": "22-rj45",
+          "title": "2.2 RJ45",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#22-rj45"
+        },
+        {
+          "level": 3,
+          "id": "23-usb-type-c",
+          "title": "2.3 USB Type-C",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#23-usb-type-c"
+        },
+        {
+          "level": 2,
+          "id": "3-camera-interfaces-inside-the-chest-compartment",
+          "title": "3. Camera Interfaces (Inside the Chest Compartment)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#3-camera-interfaces-inside-the-chest-compartment"
+        },
+        {
+          "level": 3,
+          "id": "31-interface-definition",
+          "title": "3.1 Interface Definition",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#31-interface-definition"
+        },
+        {
+          "level": 3,
+          "id": "32-connector-specifications",
+          "title": "3.2 Connector Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#32-connector-specifications"
+        },
+        {
+          "level": 2,
+          "id": "4-network-interfaces",
+          "title": "4. Network Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#4-network-interfaces"
+        },
+        {
+          "level": 3,
+          "id": "41-current-robot-interface-definition",
+          "title": "4.1 Current Robot Interface Definition",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#41-current-robot-interface-definition"
+        },
+        {
+          "level": 3,
+          "id": "42-connector-specifications",
+          "title": "4.2 Connector Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#42-connector-specifications"
+        },
+        {
+          "level": 2,
+          "id": "5-other-interfaces-inside-the-chest-compartment",
+          "title": "5. Other Interfaces (Inside the Chest Compartment)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#5-other-interfaces-inside-the-chest-compartment"
+        }
+      ],
+      "links": [
+        {
+          "label": "1. Power Supply Interface",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#1-power-supply-interface"
+        },
+        {
+          "label": "1.1 Pin Definition",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#11-pin-definition"
+        },
+        {
+          "label": "1.2 Connector Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#12-connector-specifications"
+        },
+        {
+          "label": "2. Service Compartment Interfaces (Service Breakout Interfaces)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#2-service-compartment-interfaces-service-breakout-interfaces"
+        },
+        {
+          "label": "2.1 USB Type-A",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#21-usb-type-a"
+        },
+        {
+          "label": "2.2 RJ45",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#22-rj45"
+        },
+        {
+          "label": "2.3 USB Type-C",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#23-usb-type-c"
+        },
+        {
+          "label": "3. Camera Interfaces (Inside the Chest Compartment)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#3-camera-interfaces-inside-the-chest-compartment"
+        },
+        {
+          "label": "3.1 Interface Definition",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#31-interface-definition"
+        },
+        {
+          "label": "3.2 Connector Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#32-connector-specifications"
+        },
+        {
+          "label": "4. Network Interfaces",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#4-network-interfaces"
+        },
+        {
+          "label": "4.1 Current Robot Interface Definition",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#41-current-robot-interface-definition"
+        },
+        {
+          "label": "4.2 Connector Specifications",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#42-connector-specifications"
+        },
+        {
+          "label": "5. Other Interfaces (Inside the Chest Compartment)",
+          "url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/09-hardware_development_guide#5-other-interfaces-inside-the-chest-compartment"
+        }
+      ]
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "fd82f2cf56c09116",
+      "name": "/aima/heartbeat/pb_3Aaimdk_2Eprotocol_2EProcessHeartbeatChannel",
+      "transport": "ROS2 Topic",
+      "summary": "example:: heart_beat",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.5.2 Native C++ Development",
+      "heading_id": "552-native-c-development",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development",
+      "message_types": [
+        "aimdk::protocol::ProcessHeartbeatChannel"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "d0fcc7c85af92794",
+      "name": "/audiohal/audio/capture",
+      "transport": "ROS2 Topic",
+      "summary": "example:: audio_capture; sources: AimDK Customise ROS2 Message",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.5.2 Native C++ Development",
+      "heading_id": "552-native-c-development",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development",
+      "message_types": [
+        "audio_msgs::msg::AudioCapture"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "bf7143259a7232ed",
+      "name": "/interaction/tts_status/pb_3Aaimdk_2Eprotocol_2ETTSStatus",
+      "transport": "ROS2 Topic",
+      "summary": "example:: tts_status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.5.2 Native C++ Development",
+      "heading_id": "552-native-c-development",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development",
+      "message_types": [
+        "aimdk::protocol::TTSStatus"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "3860196013301d5f",
+      "name": "/motion/control/arm_joint_state",
+      "transport": "ROS2 Topic",
+      "summary": "example:: joint_state; sources: ROS2 standard message",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.5.2 Native C++ Development",
+      "heading_id": "552-native-c-development",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development",
+      "message_types": [
+        "sensor_msgs::msg::JointState"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "e62407e0ea09a707",
+      "name": "GetAction",
+      "transport": "HTTP JSON RPC",
+      "summary": "",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.5.2 Native C++ Development",
+      "heading_id": "552-native-c-development",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "ff4fc2d0c3bd77ab",
+      "name": "GetArmJointState",
+      "transport": "HTTP JSON RPC",
+      "summary": "",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.5.2 Native C++ Development",
+      "heading_id": "552-native-c-development",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#552-native-c-development",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "1a882526d09e10c9",
+      "name": "/aima/heartbeat/pb_3Aaimdk_2Eprotocol_2EProcessHeartbeatChannel",
+      "transport": "ROS2 Topic",
+      "summary": "example:: heart_beat",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.7.2 Channel Examples",
+      "heading_id": "572-channel-examples",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#572-channel-examples",
+      "message_types": [
+        "aimdk::protocol::ProcessHeartbeatChannel"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "96f4f254550c63d0",
+      "name": "/interaction/tts_status/pb_3Aaimdk_2Eprotocol_2ETTSStatus",
+      "transport": "ROS2 Topic",
+      "summary": "example:: tts_status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.7.2 Channel Examples",
+      "heading_id": "572-channel-examples",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#572-channel-examples",
+      "message_types": [
+        "aimdk::protocol::TTSStatus"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "4349d4d63181f129",
+      "name": "GetAction",
+      "transport": "HTTP JSON RPC",
+      "summary": "",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.7.3 RPC Examples",
+      "heading_id": "573-rpc-examples",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#573-rpc-examples",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "965b1268652d6aef",
+      "name": "GetArmJointState",
+      "transport": "HTTP JSON RPC",
+      "summary": "",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment",
+      "heading_title": "5.7.3 RPC Examples",
+      "heading_id": "573-rpc-examples",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/05-second_develop_program_deployment#573-rpc-examples",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "d271d596e684287a",
+      "name": "/motion/control/hand_joint_command",
+      "transport": "ROS2 Topic",
+      "summary": "Finger control command",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.10 Finger Control Command and State Topic Interfaces",
+      "heading_id": "7110-finger-control-command-and-state-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7110-finger-control-command-and-state-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::JointState"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/hand.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "eb2daee82fcfa8a4",
+      "name": "/motion/control/hand_joint_state",
+      "transport": "ROS2 Topic",
+      "summary": "Finger state topic",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.10 Finger Control Command and State Topic Interfaces",
+      "heading_id": "7110-finger-control-command-and-state-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7110-finger-control-command-and-state-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::JointState"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/joint_state.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "9507c17071f2a131",
+      "name": "pb:/aimdk.protocol.MotionControlMotionService/EnableArmCompliance",
+      "transport": "HTTP JSON RPC",
+      "summary": "Enable arm compliance mode",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.11 Enable Arm Compliance",
+      "heading_id": "7111-enable-arm-compliance",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7111-enable-arm-compliance",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "examples/mc/EnableArmCompliance.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "d5b58aec8bc1700a",
+      "name": "pb:/aimdk.protocol.MotionControlMotionService/DisableArmCompliance",
+      "transport": "HTTP JSON RPC",
+      "summary": "Disable arm compliance mode",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.12 Disable Arm Compliance",
+      "heading_id": "7112-disable-arm-compliance",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7112-disable-arm-compliance",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "examples/mc/DisableArmCompliance.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "8b7bddc8171791b2",
+      "name": "pb:/aimdk.protocol.MotionControlMotionService/CheckArmCompliance",
+      "transport": "HTTP JSON RPC",
+      "summary": "Query the arm compliance mode status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.13 Check Arm Compliance",
+      "heading_id": "7113-check-arm-compliance",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#7113-check-arm-compliance",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "examples/mc/CheckArmCompliance.sh"
+      ],
+      "warnings": [
+        "Document method mismatch: Interface Name is pb:/aimdk.protocol.MotionControlMotionService/CheckArmCompliance; URL is http://10.42.10.12:56322/rpc/aimdk.protocol.MotionControlMotionService/DisableArmCompliance. Neither value was corrected."
+      ]
+    },
+    {
+      "id": "e8857d53813b3fde",
+      "name": "pb:/aimdk.protocol.MotionControlActionService/GetAction",
+      "transport": "HTTP JSON RPC",
+      "summary": "Query the motion control state machine",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.2 State Machine Switching and Query RPC Interfaces",
+      "heading_id": "712-state-machine-switching-and-query-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#712-state-machine-switching-and-query-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "example/mc/S_GetAction.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "67ec390c2db20ae2",
+      "name": "pb:/aimdk.protocol.MotionControlActionService/SetAction",
+      "transport": "HTTP JSON RPC",
+      "summary": "Switch the motion control state machine",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.2 State Machine Switching and Query RPC Interfaces",
+      "heading_id": "712-state-machine-switching-and-query-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#712-state-machine-switching-and-query-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "examples/mc/S_SetAction.py"
+      ],
+      "warnings": [
+        "Request acceptance does not establish completion; consult the documented status interface."
+      ]
+    },
+    {
+      "id": "77cb2adb2a75285c",
+      "name": "pb:/aimdk.protocol.MotionControlActionService/GetAvailableActions",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get available actions",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.3 RPC Interface for Querying Available Robot Actions",
+      "heading_id": "713-rpc-interface-for-querying-available-robot-actions",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#713-rpc-interface-for-querying-available-robot-actions",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "examples/mc/S_SetAction.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "6646e41af0ce5027",
+      "name": "/motion/control/locomotion_velocity",
+      "transport": "ROS2 Topic",
+      "summary": "Walking control command",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.4 Walking Control Command Topic Interface",
+      "heading_id": "714-walking-control-command-topic-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#714-walking-control-command-topic-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/walk.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "df41b944790dde08",
+      "name": "/motion/control/arm_joint_command",
+      "transport": "ROS2 Topic",
+      "summary": "Arm joint control command",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.5 Arm Control Command and State Topic Interfaces",
+      "heading_id": "715-arm-control-command-and-state-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#715-arm-control-command-and-state-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::JointState"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/arm.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "699fdf4fdfcf9337",
+      "name": "/motion/control/arm_joint_state",
+      "transport": "ROS2 Topic",
+      "summary": "Arm joint state topic",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.5 Arm Control Command and State Topic Interfaces",
+      "heading_id": "715-arm-control-command-and-state-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#715-arm-control-command-and-state-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::JointState"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/joint_state.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "acaa6de0dc92dafd",
+      "name": "/motion/control/pnc/arm_joint_command",
+      "transport": "ROS2 Topic",
+      "summary": "Arm joint control",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.6 Arm Control Command (Configurable Kp/Kd)",
+      "heading_id": "716-arm-control-command-configurable-kpkd",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#716-arm-control-command-configurable-kpkd",
+      "message_types": [
+        "joint_msgs/msg/JointCommand"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/arm_joint_command.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "e9fa93cafd987db9",
+      "name": "/motion/control/move_waist",
+      "transport": "ROS2 Topic",
+      "summary": "Waist posture control",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.7 Waist Posture Control Topic Interface",
+      "heading_id": "717-waist-posture-control-topic-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#717-waist-posture-control-topic-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/move_waist.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "34ca037c347100e5",
+      "name": "/motion/control/neck_joint_command",
+      "transport": "ROS2 Topic",
+      "summary": "Neck control command",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.8 Neck Control Command and State Topic Interfaces",
+      "heading_id": "718-neck-control-command-and-state-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#718-neck-control-command-and-state-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::JointState"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/neck.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "646aa77b64f6ff59",
+      "name": "/motion/control/neck_joint_state",
+      "transport": "ROS2 Topic",
+      "summary": "Neck state topic",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.8 Neck Control Command and State Topic Interfaces",
+      "heading_id": "718-neck-control-command-and-state-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#718-neck-control-command-and-state-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::JointState"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/joint_state.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "657e8665c8487b7e",
+      "name": "/motion/control/pnc/neck_joint_command",
+      "transport": "ROS2 Topic",
+      "summary": "Head joint control",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control",
+      "heading_title": "7.1.9 Neck Control Command (Configurable Kp/Kd)",
+      "heading_id": "719-neck-control-command-configurable-kpkd",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-01-motion_control#719-neck-control-command-configurable-kpkd",
+      "message_types": [
+        "joint_msgs/msg/JointCommand"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/mc/neck_joint_command.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "7bb3d06cc8a841f7",
+      "name": "/audiohal/audio/playback",
+      "transport": "ROS2 Topic",
+      "summary": "Play streaming audio",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.10 Play Streaming Audio",
+      "heading_id": "7210-play-streaming-audio",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#7210-play-streaming-audio",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [
+        "examples/agent/audio_examples_sender"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "4f352aec76ecde5e",
+      "name": "pb:/aimdk.protocol.TTSService/PlayTTS",
+      "transport": "HTTP JSON RPC",
+      "summary": "TTS playback interface, requires network connection",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.2 TTS Playback RPC Interface",
+      "heading_id": "722-tts-playback-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#722-tts-playback-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/tts_broadcast.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "e6b1807105692a42",
+      "name": "pb:/aimdk.protocol.TTSService/PlayMediaFile",
+      "transport": "HTTP JSON RPC",
+      "summary": "Audio file playback",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.3 Audio File Playback RPC Interface",
+      "heading_id": "723-audio-file-playback-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#723-audio-file-playback-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/play_media_file.sh"
+      ],
+      "warnings": [
+        "The source warns that playback can fail silently while is_success is true."
+      ]
+    },
+    {
+      "id": "f198c6d4f4dddcc2",
+      "name": "pb:/aimdk.protocol.TTSService/GetAudioStatus",
+      "transport": "HTTP JSON RPC",
+      "summary": "TTS/Audio file playback status query",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.4 TTS/Audio File Playback Status Query RPC Interface",
+      "heading_id": "724-ttsaudio-file-playback-status-query-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#724-ttsaudio-file-playback-status-query-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/tts_status_rpc.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "634fc5accbcb405f",
+      "name": "/interaction/tts_status",
+      "transport": "ROS2 Topic",
+      "summary": "TTS/Audio file playback status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.5 TTS/Audio File Playback Status Topic Interface",
+      "heading_id": "725-ttsaudio-file-playback-status-topic-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#725-ttsaudio-file-playback-status-topic-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/agent/tts_status_topic.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "92eb3ba5675fb58f",
+      "name": "pb:/aimdk.protocol.TTSService/StopTTSTraceId",
+      "transport": "HTTP JSON RPC",
+      "summary": "Interrupt single file/TTS playback",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.6 TTS/Audio File Playback Interruption RPC Interface",
+      "heading_id": "726-ttsaudio-file-playback-interruption-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#726-ttsaudio-file-playback-interruption-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/stop_tts.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bb354e54d87a7e23",
+      "name": "pb:/aimdk.protocol.RobotFunctionSettingService/ConfigControl",
+      "transport": "HTTP JSON RPC",
+      "summary": "Set or query the volume",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.7 Audio Volume Get/Set RPC Interface",
+      "heading_id": "727-audio-volume-getset-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#727-audio-volume-getset-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/mc/ConfigControl.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "82bef29d7abe5bb8",
+      "name": "/audio_5Fmsgs/srv/RequestAudioFocus",
+      "transport": "ROS2 Service",
+      "summary": "Request audio focus",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.8 Request Audio Focus",
+      "heading_id": "728-request-audio-focus",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#728-request-audio-focus",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [
+        "examples/agent/RequestAudioFocus.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "ded733940da92dff",
+      "name": "/audio_5Fmsgs/srv/AbandonAudioFocus",
+      "transport": "ROS2 Service",
+      "summary": "Release audio focus",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play",
+      "heading_title": "7.2.9 Release Audio Focus",
+      "heading_id": "729-release-audio-focus",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-02-audio_play#729-release-audio-focus",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [
+        "examples/agent/AbandonAudioFocus.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "6ce5470320240245",
+      "name": "/agent/process_audio_doa/pb_3Aaimdk_2Eprotocol_2EProcessedAudioDoa",
+      "transport": "ROS2 Topic",
+      "summary": "Built-in microphone wake-up angle interface",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.10 Built-in Microphone Wake-Up Angle Interface",
+      "heading_id": "7310-built-in-microphone-wake-up-angle-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#7310-built-in-microphone-wake-up-angle-interface",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [
+        "examples/agent/verify_process_audio_doa.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "5a32f066492c3fcb",
+      "name": "pb:/aimdk.protocol.AgentControlService/SetVoiceEnable",
+      "transport": "HTTP JSON RPC",
+      "summary": "Set Silent Mode",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.2 Set Silent Mode RPC Interface",
+      "heading_id": "732-set-silent-mode-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#732-set-silent-mode-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/SetVoiceEnable.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "75dae465a89e6328",
+      "name": "pb:/aimdk.protocol.AgentControlService/GetVoiceEnable",
+      "transport": "HTTP JSON RPC",
+      "summary": "Query Silent Mode Status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.3 Query Silent Mode RPC Interface",
+      "heading_id": "733-query-silent-mode-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#733-query-silent-mode-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/GetVoiceEnable.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "15f54d106720eca6",
+      "name": "pb:/aimdk.protocol.AgentControlService/SetAgentPropertiesRequest",
+      "transport": "HTTP JSON RPC",
+      "summary": "Set Interaction Operation Mode",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.4 Set Interaction Operation Mode RPC Interface",
+      "heading_id": "734-set-interaction-operation-mode-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#734-set-interaction-operation-mode-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/SetAgentPropertiesRequest.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "993fe189a67686d7",
+      "name": "pb:/aimdk.protocol.AgentControlService/GetAgentPropertiesRequest",
+      "transport": "HTTP JSON RPC",
+      "summary": "Query Interaction Operation Mode",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.5 Get Interaction Operation Mode RPC Interface",
+      "heading_id": "735-get-interaction-operation-mode-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#735-get-interaction-operation-mode-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/GetAgentPropertiesRequest.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "17fb35b6d4aa808a",
+      "name": "/agent/process_audio_output",
+      "transport": "ROS2 Topic",
+      "summary": "Noise-Reduced Microphone Audio Interface",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.6 Noise-Reduced Microphone Audio Topic Interface",
+      "heading_id": "736-noise-reduced-microphone-audio-topic-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#736-noise-reduced-microphone-audio-topic-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/agent/get_voice.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "e1eeb3521972392c",
+      "name": "/agent/wakeup",
+      "transport": "ROS2 Topic",
+      "summary": "Wake-Up Result Reporting",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.7 Wake-Up Result Reporting",
+      "heading_id": "737-wake-up-result-reporting",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#737-wake-up-result-reporting",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/agent/get_wakeup_result.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "28c59bb077381d7d",
+      "name": "pb:/aimdk.protocol.HalAudioService/SetMicSourceRequest",
+      "transport": "HTTP JSON RPC",
+      "summary": "Switch the microphone source between the built-in microphone and the external microphone",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.8 Built-in and External Microphone Switching RPC Interface",
+      "heading_id": "738-built-in-and-external-microphone-switching-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#738-built-in-and-external-microphone-switching-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/SetMicSource.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "ede892f9dcfacbcd",
+      "name": "pb:/aimdk.protocol.HalAudioService/GetMicSourceRequest",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get the microphone source currently in use",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone",
+      "heading_title": "7.3.9 Built-in and External Microphone Status Query RPC Interface",
+      "heading_id": "739-built-in-and-external-microphone-status-query-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-03-microphone#739-built-in-and-external-microphone-status-query-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/agent/GetMicSource.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "c882bc922910990e",
+      "name": "pb:/aimdk.protocol.HDSService/GetAlertList",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get Current Alert List",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting",
+      "heading_title": "7.4.2 Get Current Alert List RPC Interface",
+      "heading_id": "742-get-current-alert-list-rpc-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-04-troubleshooting#742-get-current-alert-list-rpc-interface",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "examples/hds/get_alert_list.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "d64c6c60c388e6b5",
+      "name": "pb:/aimdk.protocol.ResourceService/CreateResource",
+      "transport": "HTTP JSON RPC",
+      "summary": "Create resource",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager",
+      "heading_title": "7.5.3 Create Resource",
+      "heading_id": "753-create-resource",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#753-create-resource",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/resource_manager/CreateResource.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "0af52e9f6dc2a4b4",
+      "name": "pb:/aimdk.protocol.ResourceService/DeleteResource",
+      "transport": "HTTP JSON RPC",
+      "summary": "Delete a resource",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager",
+      "heading_title": "7.5.4 Delete Resource",
+      "heading_id": "754-delete-resource",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#754-delete-resource",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/resource_manager/DeleteResource.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "61ea4de5a306ba1e",
+      "name": "pb:/aimdk.protocol.ResourceService/UpdateResource",
+      "transport": "HTTP JSON RPC",
+      "summary": "Update a resource",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager",
+      "heading_title": "7.5.5 Update Emoticon Resource",
+      "heading_id": "755-update-emoticon-resource",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#755-update-emoticon-resource",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/resource_manager/UpdateResource.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "1e9a7ce0a2591ea1",
+      "name": "pb:/aimdk.protocol.ResourceService/GetResourceList",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get the resource list",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager",
+      "heading_title": "7.5.6 Get Resource List",
+      "heading_id": "756-get-resource-list",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#756-get-resource-list",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/resource_manager/GetResourceList.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "f735bfa79b2de9ea",
+      "name": "pb:/aimdk.protocol.ResourceService/GetResource",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get information about a resource",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager",
+      "heading_title": "7.5.7 Get Single Resource Information",
+      "heading_id": "757-get-single-resource-information",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-05-resource_manager#757-get-single-resource-information",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/resource_manager/GetResource.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "008b16f5385c28ae",
+      "name": "/hal/armpit_right_fisheye_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Right armpit fisheye camera; data stream: Color image (color); resolution: 1920*1536; frame rate: 30FPS; camera: Right armpit fisheye; type: RGB; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "fae2eda008156b30",
+      "name": "/hal/armpit_right_fisheye_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Right armpit fisheye; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "c4d28c23272f1d5a",
+      "name": "/hal/chest_front_d457_camera/compressed_depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Front chest D457; type: CompressedDepth; normal mode: Not published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "dd9a238e13445fc1",
+      "name": "/hal/chest_front_d457_camera/depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Front chest D457; type: Depth; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "63d267946d159e7b",
+      "name": "/hal/chest_front_d457_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Front chest depth camera; data stream: Color image (color); resolution: 1280*720; frame rate: 30FPS; camera: Front chest D457; type: RGB; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "e49dc39fbf9299bc",
+      "name": "/hal/chest_front_d457_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Front chest depth camera H265; data stream: Color image (color) h265 encoded; resolution: 1280*720; frame rate: 30FPS; camera: Front chest D457; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "2339cf9e61263da7",
+      "name": "/hal/head_front_left_fisheye_camera/image",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Front head; type: RGB; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "a4b13efd06afb015",
+      "name": "/hal/head_front_right_fisheye_camera/image",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Front head; type: RGB; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "de54a8d95757ef42",
+      "name": "/hal/head_left_fisheye_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Left head fisheye; data stream: Color image (color); resolution: 1920*1536; frame rate: 30FPS; camera: Left head; type: RGB; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "84b3e347975c47c0",
+      "name": "/hal/head_left_fisheye_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Left head fisheye H265; data stream: Color image (color) h265 encoded; resolution: 1920*1536; frame rate: 30FPS; camera: Left head; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "4663b82feb5104cc",
+      "name": "/hal/head_rear_fisheye_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Rear head fisheye; data stream: Color image (color); resolution: 1920*1536; frame rate: 30FPS; camera: Rear head; type: RGB; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "511be519ef4ce84f",
+      "name": "/hal/head_rear_fisheye_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Rear head fisheye H265; data stream: Color image (color) h265 encoded; resolution: 1920*1536; frame rate: 30FPS; camera: Rear head; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "763a61a7775eb486",
+      "name": "/hal/head_right_fisheye_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Right head fisheye; data stream: Color image (color); resolution: 1920*1536; frame rate: 30FPS; camera: Right head; type: RGB; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "e20384fcf8eb3e49",
+      "name": "/hal/head_right_fisheye_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Right head fisheye H265; data stream: Color image (color) h265 encoded; resolution: 1920*1536; frame rate: 30FPS; camera: Right head; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "15e7fed0d5ced15f",
+      "name": "/hal/head_stereo_left_fisheye_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Left slave camera of head stereo pair; data stream: Color image (color); resolution: 2400*1800; frame rate: 30FPS; camera: Left stereo; type: RGB; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "45e157755f860003",
+      "name": "/hal/head_stereo_left_fisheye_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Left eye of head stereo camera H265; data stream: Color image (color) h265 encoded; resolution: 2400*1800; frame rate: 30FPS; camera: Left stereo; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "a0b245b51365242a",
+      "name": "/hal/head_stereo_right_fisheye_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Right slave camera of head stereo pair; data stream: Color image (color); resolution: 2400*1800; frame rate: 30FPS; camera: Right stereo; type: RGB; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "02beedb6092b4911",
+      "name": "/hal/head_stereo_right_fisheye_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Right eye of head stereo camera H265; data stream: Color image (color) h265 encoded; resolution: 2400*1800; frame rate: 30FPS; camera: Right stereo; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "d2ca02f1d832e48b",
+      "name": "/hal/neck_middle_livox_lidar/imu",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Neck IMU sensor",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": [
+        "The source lists CompressedVideo for an IMU topic. This apparent type inconsistency is preserved and requires runtime verification."
+      ]
+    },
+    {
+      "id": "6aff16c8e7d4b090",
+      "name": "/hal/neck_middle_livox_lidar/pointcloud",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: LiDAR",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::PointCloud2"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "7f9a2b70f769f608",
+      "name": "/hal/waist_front_d415_camera/compressed_depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Front waist D415; type: CompressedDepth; normal mode: Not published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "7bb21a08766f8758",
+      "name": "/hal/waist_front_d415_camera/depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Front waist D415; type: Depth; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "91faf1ed699db6e8",
+      "name": "/hal/waist_front_d415_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Front waist depth camera; data stream: Color image (color); resolution: 1280*720; frame rate: 30FPS; camera: Front waist D415; type: RGB; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "e2ff007bd44590db",
+      "name": "/hal/waist_front_d415_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Front waist depth camera H265; data stream: Color image (color) h265 encoded; resolution: 1280*720; frame rate: 30FPS; camera: Front waist D415; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "d986ffd154fd867c",
+      "name": "/hal/wrist_left_d405_camera/compressed_depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Left wrist D405; type: CompressedDepth; normal mode: Not published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "442e5df308a3cec5",
+      "name": "/hal/wrist_left_d405_camera/depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Left wrist D405; type: Depth; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "1263c462893a292f",
+      "name": "/hal/wrist_left_d405_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Left wrist depth camera; data stream: Color image (color); resolution: 848*480; frame rate: 30FPS; camera: Left wrist D405; type: RGB; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "663afd490b0bff90",
+      "name": "/hal/wrist_left_d405_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Left wrist depth camera H265; data stream: Color image (color) h265 encoded; resolution: 848*480; frame rate: 30FPS; camera: Left wrist D405; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "0c0cc36e686ea8a4",
+      "name": "/hal/wrist_right_d405_camera/compressed_depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Right wrist D405; type: CompressedDepth; normal mode: Not published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "5aa45aa9ef98f1a9",
+      "name": "/hal/wrist_right_d405_camera/depth",
+      "transport": "ROS2 Topic",
+      "summary": "camera: Right wrist D405; type: Depth; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "7e31307721863127",
+      "name": "/hal/wrist_right_d405_camera/rgb",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Right wrist depth camera; data stream: Color image (color); resolution: 848*480; frame rate: 30FPS; camera: Right wrist D405; type: RGB; normal mode: Published; data collection mode: Not published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "sensor_msgs::msg::Image"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "c456c4cf2eef846a",
+      "name": "/hal/wrist_right_d405_camera/stream",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Right wrist depth camera H265; data stream: Color image (color) h265 encoded; resolution: 848*480; frame rate: 30FPS; camera: Right wrist D405; type: H265; normal mode: Published; data collection mode: Published",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "eafac6c4aa64f0a3",
+      "name": "/ros2/body_drive/pelvis_imu/data",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Waist IMU sensor",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": [
+        "The source lists CompressedVideo for an IMU topic. This apparent type inconsistency is preserved and requires runtime verification."
+      ]
+    },
+    {
+      "id": "9f619accc42f4c30",
+      "name": "/ros2/body_drive/torso_imu/data",
+      "transport": "ROS2 Topic",
+      "summary": "sensor model: Chest IMU sensor",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data",
+      "heading_title": "7.6.2 Sensor Topic Interfaces",
+      "heading_id": "762-sensor-topic-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-06-sensor_data#762-sensor-topic-interfaces",
+      "message_types": [
+        "foxglove_msgs::msg::CompressedVideo"
+      ],
+      "target_host": null,
+      "example_paths": [],
+      "warnings": [
+        "The source lists CompressedVideo for an IMU topic. This apparent type inconsistency is preserved and requires runtime verification."
+      ]
+    },
+    {
+      "id": "534d0ddfd397fb20",
+      "name": "/aima/bms/data/pb_3Aaimdk_2Eprotocol_2EBmsStateChannel",
+      "transport": "ROS2 Topic",
+      "summary": "Get BMS battery status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status",
+      "heading_title": "7.7.1 BMS Status Subscription Interface",
+      "heading_id": "771-bms-status-subscription-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#771-bms-status-subscription-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/other/bms.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "b0dfc2ebbb33969c",
+      "name": "/hal_state/emergency/pb_3Aaimdk_2Eprotocol_2EEmergencyStateChannel",
+      "transport": "ROS2 Topic",
+      "summary": "Get emergency stop status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status",
+      "heading_title": "7.7.2 Emergency Stop Status Subscription Interface",
+      "heading_id": "772-emergency-stop-status-subscription-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#772-emergency-stop-status-subscription-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/other/emergency_state.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "471518a340d72911",
+      "name": "pb:/aimdk.protocol.HalEmergencyService/SetEmergencyCommand",
+      "transport": "RPC",
+      "summary": "Trigger an active emergency stop",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status",
+      "heading_title": "7.7.3 Active Emergency Stop Interface",
+      "heading_id": "773-active-emergency-stop-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-07-system_status#773-active-emergency-stop-interface",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [
+        "examples/other/SetEmergencyCommand.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "0a4766ce40045b19",
+      "name": "pb:/aimdk.protocol.MappingService/GetRealtimeMapData",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get mapping data",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.10 RPC Interface for Getting Mapping Data",
+      "heading_id": "7810-rpc-interface-for-getting-mapping-data",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7810-rpc-interface-for-getting-mapping-data",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/get_realtime_map.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "c1a1a957379d8533",
+      "name": "pb:/aimdk.protocol.RelocalizationService/StartGlobalRelocalization",
+      "transport": "HTTP JSON RPC",
+      "summary": "Robot relocalization",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.11 RPC Interface for Relocalization",
+      "heading_id": "7811-rpc-interface-for-relocalization",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7811-rpc-interface-for-relocalization",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/relocalization.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "7a590c4f9390a327",
+      "name": "pb:/aimdk.protocol.MappingService/SetCurrentWorkingMap",
+      "transport": "HTTP JSON RPC",
+      "summary": "Set the current working map",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.12 RPC Interface for Setting the Current Working Map",
+      "heading_id": "7812-rpc-interface-for-setting-the-current-working-map",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7812-rpc-interface-for-setting-the-current-working-map",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/set_current_working_map.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "bd1dc7d8babce018",
+      "name": "pb:/aimdk.protocol.SLAMRelocalizationService/SLAMStopNormalRelocalization",
+      "transport": "RPC",
+      "summary": "Manual relocalization interface",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.14 Manual Relocalization Interface",
+      "heading_id": "7814-manual-relocalization-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#7814-manual-relocalization-interface",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [
+        "examples/mm/teleop_relocation.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "79d771d41274cf3a",
+      "name": "pb:/aimdk.protocol.MappingService/Get2DWholeMap",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get 2D map data",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.2 RPC Interface for Getting 2D Map Data",
+      "heading_id": "782-rpc-interface-for-getting-2d-map-data",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#782-rpc-interface-for-getting-2d-map-data",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/get_2d_whole_map.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "4a2d505ecc74a896",
+      "name": "pb:/aimdk.protocol.MappingService/GetStoredMapNames",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get the map list",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.3 RPC Interface for Getting the Map List",
+      "heading_id": "783-rpc-interface-for-getting-the-map-list",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#783-rpc-interface-for-getting-the-map-list",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/get_stored_map_names.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "366f81c9c0186921",
+      "name": "pb:/aimdk.protocol.MappingService/GetCurrentWorkingMap",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get the current working map ID",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.4 RPC Interface for Getting the Current Working Map ID",
+      "heading_id": "784-rpc-interface-for-getting-the-current-working-map-id",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#784-rpc-interface-for-getting-the-current-working-map-id",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/get_current_working_map.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "2c3112ed0b10a6f8",
+      "name": "pb:/aimdk.protocol.LocalizationService/GetTopoMsgs",
+      "transport": "HTTP JSON RPC",
+      "summary": "Get map topology data",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.5 RPC Interface for Getting Map Topology Data",
+      "heading_id": "785-rpc-interface-for-getting-map-topology-data",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#785-rpc-interface-for-getting-map-topology-data",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/get_topo_msgs.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "90fda43e81a9575c",
+      "name": "pb:/aimdk.protocol.MappingService/StartMapping",
+      "transport": "HTTP JSON RPC",
+      "summary": "Create a map",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.6 RPC Interface for Creating a Map",
+      "heading_id": "786-rpc-interface-for-creating-a-map",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#786-rpc-interface-for-creating-a-map",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/start_mapping.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "d229ffb0516d03ce",
+      "name": "pb:/aimdk.protocol.MappingService/StopMapping",
+      "transport": "HTTP JSON RPC",
+      "summary": "Stop mapping",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.7 RPC Interface for Stopping Mapping",
+      "heading_id": "787-rpc-interface-for-stopping-mapping",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#787-rpc-interface-for-stopping-mapping",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/stop_mapping.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "f05b2e8499e815b6",
+      "name": "pb:/aimdk.protocol.MappingService/SyncRegion",
+      "transport": "HTTP JSON RPC",
+      "summary": "Modify a map",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.8 RPC Interface for Modifying a Map",
+      "heading_id": "788-rpc-interface-for-modifying-a-map",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#788-rpc-interface-for-modifying-a-map",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "d14ea8b712ff411e",
+      "name": "pb:/aimdk.protocol.MappingService/RenameMap",
+      "transport": "HTTP JSON RPC",
+      "summary": "Rename a map",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map",
+      "heading_title": "7.8.9 RPC Interface for Renaming a Map",
+      "heading_id": "789-rpc-interface-for-renaming-a-map",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-08-map#789-rpc-interface-for-renaming-a-map",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [
+        "examples/mm/rename_map.sh"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "b058c91a26582e47",
+      "name": "pb:/aimdk.protocol.PncService/DirectNaviToRelative",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a direct-movement task for the specified relative target pose",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "e58ad77bd1c28171",
+      "name": "pb:/aimdk.protocol.PncService/DirectNaviToRelativeGoal",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a direct-movement task for the specified target point ID",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "86861a910de565b7",
+      "name": "pb:/aimdk.protocol.PncService/LinearNaviToGoal",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a straight-line navigation task for the specified target point ID",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "894c889dcd32f23d",
+      "name": "pb:/aimdk.protocol.PncService/LinearNaviToPose2D",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a straight-line navigation task for the specified target pose",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "0267ad5ef2c08a38",
+      "name": "pb:/aimdk.protocol.PncService/LinearNaviToRelative",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a straight-line navigation task for the specified relative target pose",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "1adea32565fd1dc5",
+      "name": "pb:/aimdk.protocol.PncService/PlanningNaviToGoal",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a planned navigation task for the specified target point ID",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "65d0c1179ec15f67",
+      "name": "pb:/aimdk.protocol.PncService/PlanningNaviToPose2D",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a planned navigation task for the specified target pose",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "97995cab2c2feca7",
+      "name": "pb:/aimdk.protocol.PncService/PreciseNaviToGoal",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a high-precision navigation task for the specified target point ID",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.2 Point-to-Point Navigation RPC Interfaces",
+      "heading_id": "792-point-to-point-navigation-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#792-point-to-point-navigation-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "3399c9f94d6b43c7",
+      "name": "pb:/aimdk.protocol.PncService/MoveForward",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a straight-line translation task",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.3 Simple Movement RPC Interfaces",
+      "heading_id": "793-simple-movement-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#793-simple-movement-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "719d0c87f193d67d",
+      "name": "pb:/aimdk.protocol.PncService/SpinTurn",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues an in-place rotation task",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.3 Simple Movement RPC Interfaces",
+      "heading_id": "793-simple-movement-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#793-simple-movement-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "a7ba2d7d3b008ff7",
+      "name": "pb:/aimdk.protocol.PncService/SpinTurnAndMoveForward",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a task for in-place rotation followed by straight forward movement",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.3 Simple Movement RPC Interfaces",
+      "heading_id": "793-simple-movement-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#793-simple-movement-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "4b3e4dbf7a9d1f92",
+      "name": "pb:/aimdk.protocol.PncService/ActionCancel",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a task-cancel command",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.4 Task Query and Control RPC Interfaces",
+      "heading_id": "794-task-query-and-control-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#794-task-query-and-control-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "8a5163ee1cdcfe38",
+      "name": "pb:/aimdk.protocol.PncService/ActionGetState",
+      "transport": "HTTP JSON RPC",
+      "summary": "Gets the navigation task status",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.4 Task Query and Control RPC Interfaces",
+      "heading_id": "794-task-query-and-control-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#794-task-query-and-control-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "f9711a1c72712c9b",
+      "name": "pb:/aimdk.protocol.PncService/ActionPause",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a task-pause command",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.4 Task Query and Control RPC Interfaces",
+      "heading_id": "794-task-query-and-control-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#794-task-query-and-control-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "98c50a2b933d43cb",
+      "name": "pb:/aimdk.protocol.PncService/ActionResume",
+      "transport": "HTTP JSON RPC",
+      "summary": "Issues a command to resume a paused task",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation",
+      "heading_title": "7.9.4 Task Query and Control RPC Interfaces",
+      "heading_id": "794-task-query-and-control-rpc-interfaces",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-09-navigation#794-task-query-and-control-rpc-interfaces",
+      "message_types": [],
+      "target_host": "10.42.10.11",
+      "example_paths": [],
+      "warnings": []
+    },
+    {
+      "id": "a6651a1e52adde61",
+      "name": "pb:/aimdk.protocol.MotionCommandService/SendMotionCommand",
+      "transport": "HTTP JSON RPC",
+      "summary": "Play the specified motion file",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "heading_title": "7.10.2 Motion Play/Pause/Reset Interface",
+      "heading_id": "7102-motion-playpausereset-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7102-motion-playpausereset-interface",
+      "message_types": [],
+      "target_host": "10.42.10.12",
+      "example_paths": [
+        "examples/skill_play/SendMotionCommand.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "41a361077c7cd8ab",
+      "name": "pb:/aimdk.protocol.HalAudioService/PlayFile",
+      "transport": "HTTP JSON RPC",
+      "summary": "Play the specified audio file",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "heading_title": "7.10.3 Play Audio",
+      "heading_id": "7103-play-audio",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7103-play-audio",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/skill_play/PlayFile.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "977ad35344511dfd",
+      "name": "pb:/aimdk.protocol.HalAudioService/StopPlay",
+      "transport": "HTTP JSON RPC",
+      "summary": "Stop the currently playing audio",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "heading_title": "7.10.4 Stop Audio",
+      "heading_id": "7104-stop-audio",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7104-stop-audio",
+      "message_types": [],
+      "target_host": "10.42.10.10",
+      "example_paths": [
+        "examples/skill_play/StopPlay.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "390bd24f67b87fa3",
+      "name": "/skill/pilot/face/play",
+      "transport": "ROS2 Topic",
+      "summary": "Used to play emoticons",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "heading_title": "7.10.5 Emoticon Playback",
+      "heading_id": "7105-emoticon-playback",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7105-emoticon-playback",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/skill_play/face_play.py"
+      ],
+      "warnings": [
+        "The source describes an iceoryx/default transport condition; ROS2 availability requires checking the source and installed configuration."
+      ]
+    },
+    {
+      "id": "8ad147f46b183bc6",
+      "name": "/skill/pilot/skill_status",
+      "transport": "ROS2 Topic",
+      "summary": "Skill status interface",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "heading_title": "7.10.6 Skill Status Interface",
+      "heading_id": "7106-skill-status-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7106-skill-status-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/skill_play/skill_status.py"
+      ],
+      "warnings": [
+        "The source describes an iceoryx/default transport condition; ROS2 availability requires checking the source and installed configuration."
+      ]
+    },
+    {
+      "id": "28c960600b598222",
+      "name": "pb:/aimdk.protocol.SkillPilotService/AutoCharging",
+      "transport": "RPC",
+      "summary": "Autonomous charging interface",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "heading_title": "7.10.7 Autonomous Charging Interface",
+      "heading_id": "7107-autonomous-charging-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7107-autonomous-charging-interface",
+      "message_types": [
+        "ros2_plugin_proto/msg/RosMsgWrapper"
+      ],
+      "target_host": null,
+      "example_paths": [
+        "examples/skill_play/auto_charging.py"
+      ],
+      "warnings": []
+    },
+    {
+      "id": "a119bc618e4a80a5",
+      "name": "pb:/aimdk.protocol.SkillPilotService/SkillPackage",
+      "transport": "RPC",
+      "summary": "Dance playback interface",
+      "page_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt",
+      "heading_title": "7.10.8 Dance Playback Interface",
+      "heading_id": "7108-dance-playback-interface",
+      "source_url": "https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/07-10-skill_poilt#7108-dance-playback-interface",
+      "message_types": [],
+      "target_host": null,
+      "example_paths": [
+        "examples/skill_play/dance_play.py"
+      ],
+      "warnings": []
+    }
+  ],
+  "coverage": {
+    "page_count": 20,
+    "heading_count": 173,
+    "interface_count": 121,
+    "notes": [
+      "Documentation-only index; no robot connection, command, message publication, or runtime verification was performed.",
+      "Scope is the English v3_3 developer-guide URLs linked from the overview and discovered pages, including the guide index.",
+      "Interface entries are source occurrences, not a count of unique runtime endpoints. Repeated names can occur under different source sections.",
+      "Only structured interface/topic/example tables are indexed. Interfaces appearing solely in prose or code examples require following the source links.",
+      "Only source H1/H2/H3 elements with actual id attributes are anchors; no fragment is generated from a title.",
+      "Message types retain the exact qualified spelling found in source cells. Missing types are empty; ROS.msg spellings are not converted.",
+      "Hosts come only from documented RPC URLs. Conflicting board-to-IP mappings are not resolved or inferred.",
+      "Payloads, credentials, full manuals, remote commands, and complete operational notes are not copied. Read the linked source for constraints and current details.",
+      "Rows with the same name, transport, and source heading are merged; different source sections remain separate."
+    ]
+  }
+}
