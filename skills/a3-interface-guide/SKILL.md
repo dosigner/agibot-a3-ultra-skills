@@ -7,6 +7,8 @@ description: A3 Ultra 기능을 구현할 때 ROS 2 Topic, HTTP JSON RPC, SDK �
 
 검토용 초안이다. 기능을 구현하는 데 필요한 통신 방식과 호출 순서를 이해하도록 돕는다. 이름 검색이 목적이면 [ROS/API 검색 스킬](../a3-ros-interface-finder/SKILL.md)을 참고한다.
 
+설치 경로가 심볼릭 링크이면 먼저 `SKILL.md`의 실제 경로(realpath)를 확인하고 모든 상대 참조와 명령 경로를 실제 경로 기준으로 해석한다.
+
 ## 사용할 자료
 
 - [HTML 목차](../../index.html)와 [공통 색인](../../catalog.json)

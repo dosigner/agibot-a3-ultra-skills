@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "local_skills": [
+    "a3-getting-started",
+    "a3-interface-guide",
+    "a3-hardware-guide",
+    "a3-ros-interface-finder"
+  ],
+  "nvidia": {
+    "repository": "NVIDIA/skills",
+    "ref": "2371df31af392071effa2bd82f39aa98b130e428",
+    "skills": [
+      "jetson-diagnostic",
+      "jetson-quick-start",
+      "deepstream-dev"
+    ]
+  }
+}

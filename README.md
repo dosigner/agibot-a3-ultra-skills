@@ -7,6 +7,7 @@ A3 Ultra 개발과 크레인 조이스틱 운전 에이전트를 위한 스킬 �
 ## 목차
 
 - [시작하기](#시작하기)
+- [Codex에 묶음 설치](#codex에-묶음-설치)
 - [합의한 12개 구성](#합의한-12개-구성)
 - [스킬 트리맵](#스킬-트리맵)
 - [개발 아키텍처](#개발-아키텍처)
@@ -14,7 +15,7 @@ A3 Ultra 개발과 크레인 조이스틱 운전 에이전트를 위한 스킬 �
 - [제어 수준](#제어-수준)
 - [관절 구조](#관절-구조)
 - [7번 설계에서 합의한 조건](#7번-설계에서-합의한-조건)
-- [NVIDIA 보조 스킬 후보](#nvidia-보조-스킬-후보)
+- [NVIDIA 보조 스킬](#nvidia-보조-스킬)
 - [저장소 트리](#저장소-트리)
 - [로컬 검색](#로컬-검색)
 - [색인 갱신과 검증](#색인-갱신과-검증)
@@ -27,6 +28,37 @@ A3 Ultra 개발과 크레인 조이스틱 운전 에이전트를 위한 스킬 �
 - [검증 기록](validation/REPORT.md)
 
 현재 색인에는 공식 문서 20페이지, 실제 헤더 주소 173개, 표 기반 인터페이스 출현 항목 121개가 있다. 같은 인터페이스가 여러 절에 등장할 수 있어 고유 API 개수와 다르다. 실제 장비 조회는 수행하지 않았다.
+
+## Codex에 묶음 설치
+
+저장소를 clone하는 것만으로 Codex 스킬이 활성화되지는 않는다. 공개 저장소이므로 GitHub 로그인 없이 내려받을 수 있다.
+
+```bash
+git clone https://github.com/dosigner/agibot-a3-ultra-skills.git
+cd agibot-a3-ultra-skills
+```
+
+이후 저장소 최상위 폴더에서 다음 명령을 실행한다. `--check`는 읽기 전용 사전 검사이며, 실제 설치는 두 번째 명령이 수행한다.
+
+```bash
+python3 scripts/install_bundle.py --check
+python3 scripts/install_bundle.py
+```
+
+설치 대상은 **A3 초안 4개와 NVIDIA 공식 스킬 3개, 총 7개**다. 합의한 자체 스킬 12개가 모두 구현됐다는 뜻은 아니다. 이 묶음은 NVIDIA 세 스킬을 모두 포함하며 개별 선택 옵션은 제공하지 않는다.
+
+| 대상 | 설치 방식 |
+| --- | --- |
+| `a3-getting-started`, `a3-interface-guide`, `a3-hardware-guide`, `a3-ros-interface-finder` | 현재 체크아웃의 실제 스킬 폴더를 가리키는 심볼릭 링크를 만든다. 공통 색인, HTML과 스크립트는 이 저장소에서 읽는다. |
+| `jetson-diagnostic`, `jetson-quick-start`, `deepstream-dev` | Codex의 공식 `skill-installer` 도구로 NVIDIA/skills의 고정 커밋 `2371df31af392071effa2bd82f39aa98b130e428`에서 파일을 내려받는다. |
+
+대상과 출처는 [설치 명세](install-manifest.json)에 있다. 설치 위치는 `CODEX_HOME`이 설정되어 있으면 그 경로의 `skills` 폴더이며, 기본값은 `~/.codex/skills`다. Python 3와 Codex의 공식 설치 도구가 필요하다. 도구가 없으면 설치 전 사전 검사에서 오류를 안내한다. 설치는 스킬 파일만 준비하며 로봇 진단, BSP 변경, DeepStream 실행을 시작하지 않는다.
+
+- 같은 A3 원본을 가리키는 기존 링크는 재사용한다. 다른 디렉터리나 끊어진 링크가 있으면 기존 항목을 덮어쓰지 않고 사전 검사에서 중단한다.
+- 이미 NVIDIA 스킬의 `SKILL.md`가 있으면 보존한다. 기존 파일의 출처 커밋이 확인되지 않으면 고정 커밋 검증이 안 된 상태로 표시한다.
+- A3 링크는 이 체크아웃에 의존한다. 폴더를 옮기거나 삭제하면 링크가 깨지고, `git pull`로 원본이 바뀌면 설치된 스킬 내용도 함께 바뀐다.
+
+설치 완료 후 다음 턴부터 스킬을 사용할 수 있다. 클라이언트 목록에 보이지 않으면 스킬을 다시 불러오거나 Codex를 재시작해 확인한다. 각 A3 스킬은 먼저 `SKILL.md`의 실제 경로를 확인해 공유 자료를 찾는다.
 
 ## 합의한 12개 구성
 
@@ -47,7 +79,7 @@ A3 Ultra 개발과 크레인 조이스틱 운전 에이전트를 위한 스킬 �
 | 8 | 기능 개발과 반복 검증 | 기능 명세, 흐름도 승인, 구현과 테스트의 반복 | 설계 예정 |
 | 9 | 강화학습과 시뮬레이션 | 관측, 행동, 보상, 모듈/API 조사와 시뮬레이션 평가 | 설계 예정 |
 
-네 초안은 저장소 전체의 공통 파일을 상대 경로로 참조한다. 각 SKILL.md만 따로 복사하는 설치는 지원하지 않는다. 현재 묶음은 전역 스킬로 설치되거나 자동 활성화되지 않았다.
+네 초안은 저장소 전체의 공통 파일을 상대 경로로 참조한다. 각 SKILL.md만 따로 복사하는 설치는 지원하지 않는다. [묶음 설치](#codex에-묶음-설치)는 원본 체크아웃을 가리키는 링크로 이 관계를 유지한다.
 
 ## 스킬 트리맵
 
@@ -198,9 +230,9 @@ shoulder pitch → shoulder roll → shoulder yaw → elbow
 
 레버의 물리적 중립, 전기적 무입력, 크레인/트롤리 정지, 하중 흔들림은 각각 다른 관측 대상이다. 현재의 주요 제어 과제는 사용자 설명상 크레인/트롤리의 잔류 주행이며, 하중 흔들림 제어까지 검증됐다는 뜻은 아니다.
 
-## NVIDIA 보조 스킬 후보
+## NVIDIA 보조 스킬
 
-NVIDIA Skill Finder로 공식 live catalog를 조회하고 다음 세 스킬의 본문을 확인했다. 아래는 **외부 보조 스킬 후보**이며 합의한 12개 자체 스킬의 개수를 늘리지 않는다. 후보 스킬 설치, OS/BSP 변경과 장비 접속은 수행하지 않았다.
+NVIDIA Skill Finder로 공식 live catalog를 조회하고 다음 세 스킬의 본문을 확인했다. 아래 세 가지는 **묶음 설치에 포함되는 외부 보조 스킬**이며 합의한 12개 자체 스킬의 개수를 늘리지 않는다. 우선순위는 활용 순서이고, 묶음의 설치 대상을 선택하는 옵션은 아니다. 스킬 설치와 OS/BSP 변경 또는 장비 접속은 별도 작업이다.
 
 | 우선순위 | 공식 스킬 | 현재 프로젝트와의 연결 | 적용 전 확인 |
 | --- | --- | --- | --- |
@@ -215,9 +247,9 @@ NVIDIA Skill Finder로 공식 live catalog를 조회하고 다음 세 스킬의 
 > A3의 Thor 보드가 jetson-diagnostic의 지원 환경인지 먼저 확인하고, 읽기 전용 자료로 OS/BSP, 메모리, GPU 사용, 온도와 서비스 상태를 분석해줘. 확인되지 않은 값은 미확인으로 남겨줘.
 
 <details>
-<summary>후보별 설치 명령과 첫 요청 예시 보기 — 설치는 수행하지 않음</summary>
+<summary>개별 설치 명령과 첫 요청 예시 보기 — 참고용</summary>
 
-아래는 필요한 스킬을 선택해 설치할 때 사용할 명령이다. 후보 검색만 수행한 현재 상태에서는 실행하지 않았다.
+아래 개별 설치 명령은 참고용으로 보존한다. 이 명령에는 커밋 고정 옵션이 없으며, 이번 묶음 설치는 위의 `install_bundle.py`가 공식 설치 도구와 고정 커밋을 사용해 세 가지를 함께 준비한다. 묶음 설치 후 아래 명령을 추가로 실행할 필요는 없다.
 
 **jetson-diagnostic — 우선 추천**
 
@@ -252,6 +284,7 @@ npx skills add nvidia/skills --skill deepstream-dev --agent codex --global --yes
 ├─ README.md                      # 구성과 개발 방향
 ├─ index.html                     # 로컬 문서 탐색과 Topic/RPC 검색
 ├─ catalog.json                   # 원문 헤더와 인터페이스 색인
+├─ install-manifest.json          # 설치 대상 7개와 고정 출처
 ├─ assets/
 │  ├─ architecture.png            # 제안 실행 구조
 │  ├─ ros2-topology.png           # 문서 기반 통신 구조
@@ -265,7 +298,7 @@ npx skills add nvidia/skills --skill deepstream-dev --agent codex --global --yes
 │  ├─ related-links.json          # 확인한 GitHub 파일
 │  └─ search-aliases.json          # 검색 동의어
 ├─ skills/                        # 작성된 스킬 초안 4개
-├─ scripts/                       # 색인, 검색, HTML, 관절 추출 도구
+├─ scripts/                       # 묶음 설치, 색인, 검색, HTML, 관절 추출 도구
 ├─ tests/                         # 파서와 검색 회귀시험
 └─ validation/                    # 수행한 검증과 미확인 범위
 ```
