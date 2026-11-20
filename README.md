@@ -329,10 +329,6 @@ python3 -m venv .venv
 
 스크립트는 공식 문서 메타데이터를 수집한다. 전체 매뉴얼, 실제 장비 로그, 자격 증명은 이 저장소에 저장하지 않는다. 원문 문장이나 코드에만 등장하는 인터페이스는 추가 탐색이 필요하다.
 
-## 관련 프로젝트
-
-[AgiBot A3 Ultra Sit–Stand RL](https://github.com/dosigner/a3-ultra-sit-stand-rl)은 고정된 의자에서 A3 Ultra가 일어나고 다시 앉는 동작을 MuJoCo로 학습하고 평가한다. [시각 가이드와 MDP 실습](https://dosigner.github.io/a3-ultra-sit-stand-rl/)에서 정책의 관측값, 보상, 가치 함수를 확인할 수 있다.
-
 ## 출처
 
 - [A3 Ultra v3.3 공식 개발 가이드](https://open.agibot.com/docs/en/aimdk/a3-ultra/v3_3/dev_guide/)
